@@ -5,6 +5,8 @@ const waters = JSON.parse(readFileSync(new URL('../public/data/waters.json', imp
 const sections = JSON.parse(readFileSync(new URL('../public/data/sections.geojson', import.meta.url)));
 const csv = readFileSync(new URL('../sources/november-2026.csv', import.meta.url), 'utf8').trim().split(/\r?\n/).slice(1).map(line => line.split(',').map(cell => cell.trim()));
 const official = JSON.parse(readFileSync(new URL('../sources/delayed-harvest.geojson', import.meta.url)));
+const crosswalk = JSON.parse(readFileSync(new URL('../sources/county-water-official-feature-ids.json', import.meta.url)));
+const searchRows = JSON.parse(readFileSync(new URL('../sources/official-search-rows.json', import.meta.url)));
 const provenance = JSON.parse(readFileSync(new URL('../sources/provenance.json', import.meta.url)));
 
 test('all 33 unique county-water rows match the official CSV date exactly', () => {
@@ -73,6 +75,22 @@ test('county-separated Tuckasegee waters do not share geometries or dates', () =
   assert.notEqual(pair[0].date, pair[1].date);
   assert.notEqual(pair[0].county, pair[1].county);
   assert.ok(pair[0].featureIds.every(id => !pair[1].featureIds.includes(id)));
+});
+
+test('every county-water mapping agrees with the independent official reach crosswalk', () => {
+  for (const water of waters) {
+    const entry = crosswalk.find(row => row.county === water.county && row.water === water.name);
+    assert.ok(entry, water.id);
+    const name = provenance.aliases[water.name] || water.name;
+    const countyMatches = searchRows.filter(row => row.county === water.county && row.water === name);
+    assert.ok(countyMatches.length, water.id);
+    assert.deepEqual([...new Set(countyMatches.map(row => row.Excel_ID))].sort((a, b) => a - b), entry.Excel_IDs);
+    const expected = official.features.filter(feature => entry.Excel_IDs.includes(feature.properties.Excel_ID)
+      && entry.object_id_field in feature.properties).map(feature => feature.properties[entry.object_id_field]).sort((a, b) => a - b);
+    assert.deepEqual(water.featureIds, expected, water.id);
+  }
+  assert.equal(sections.features.length, 38);
+  assert.equal(new Set(sections.features.map(sourceKey)).size, 38);
 });
 
 test('provenance records official schedule and current GIS source, not a geocoded guess', () => {

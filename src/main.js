@@ -205,7 +205,7 @@ function renderList() {
 }
 
 function fitResults() {
-  const bounds = markerGroup.getBounds();
+  const bounds = sectionGroup.getBounds().extend(markerGroup.getBounds());
   if (bounds.isValid())
     map.fitBounds(bounds, {
       padding: [35, 35],
@@ -305,8 +305,11 @@ async function start() {
       controls.date.add(
         new Option(dateLabel(date).replace(", 2026", ""), date),
       );
-    if (!counties.includes(state.county)) state.county = "";
-    if (!dates.includes(state.date)) state.date = "";
+    function normalizeFilters() {
+      if (!counties.includes(state.county)) state.county = "";
+      if (!dates.includes(state.date)) state.date = "";
+    }
+    normalizeFilters();
     for (const [key, control] of Object.entries(controls)) {
       control.value = state[key];
       control.addEventListener(key === "query" ? "input" : "change", () => {
@@ -319,10 +322,14 @@ async function start() {
     if (selected) selectWater(selected);
     $("#filters").addEventListener("submit", (event) => event.preventDefault());
     $("#reset").addEventListener("click", resetFilters);
-    $("#empty-reset").addEventListener("click", resetFilters);
+    $("#empty-reset").addEventListener("click", () => {
+      resetFilters();
+      controls.query.focus();
+    });
     $("#fit").addEventListener("click", fitResults);
     addEventListener("popstate", () => {
       Object.assign(state, readState(location.search));
+      normalizeFilters();
       selected = state.water;
       for (const [key, control] of Object.entries(controls))
         control.value = state[key];
