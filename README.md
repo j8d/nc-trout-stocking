@@ -48,6 +48,14 @@ Tests cover every schedule row/date, location provenance and geometry, filters, 
 
 GitHub Pages uses GitHub Actions. Pull requests run the same verification as `main`. Deployment depends on the verification job and publishes **that job's built artifact** only after data, unit, browser and dependency checks succeed. The Vite base path is `/nc-trout-stocking/`, so assets and data work on project Pages.
 
+## CI browser environment
+
+The `verify` job runs inside the official `mcr.microsoft.com/playwright:v1.58.2-noble` image pinned by SHA-256 digest. It already includes Playwright's browser binaries and Linux dependencies, so CI does not run `playwright install --with-deps` or download fonts/libraries from an Ubuntu mirror on every run. `npm ci` still installs the project's matching Playwright package; the image intentionally does not replace npm dependencies.
+
+When upgrading `@playwright/test`, update the image tag **and verified registry digest** together. `tests/ci-workflow.test.js` rejects a version mismatch and checks that audit, unit/data tests, build, browser tests, artifact upload and deployment gating remain present. An image pull still costs time; compare total job duration, not only the removed install step. This change does not alter local setup commands, required check name (`verify`), owner protections or the Pages deploy job.
+
+References: [Playwright CI containers](https://playwright.dev/docs/ci#via-containers), [official image](https://playwright.dev/docs/docker).
+
 ## Architecture and privacy
 
 Vanilla ES modules + Leaflet, built by Vite. No backend, logins, analytics, tracking scripts or API keys. Dependencies are bundled rather than loaded from a third-party script CDN. The basemap uses [OpenStreetMap standard tiles](https://operations.osmfoundation.org/policies/tiles/); tile requests expose the browser's IP and normal HTTP metadata to the tile provider. GitHub Pages serves the site and may retain its normal hosting logs. Do not prefetch or bulk-download tiles. Failed tiles leave the local water outlines, pins and complete list available.
