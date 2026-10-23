@@ -1,0 +1,1116 @@
+[
+  {
+    "county": "Ashe",
+    "water": "Helton Creek",
+    "date": "2026-11-02",
+    "schedule_row": 1,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      15
+    ],
+    "Excel_IDs": [
+      24
+    ],
+    "official_water_names": [
+      "Helton Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Ashe",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Helton Creek",
+        "reach": "900 yards upstream of S.R. 1372 bridge [marked by a sign on both banks] to a point adjacent to intersection of N.C. 16 and S.R. 1536",
+        "Excel_ID": 24,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=24"
+      }
+    ],
+    "geometry_types": [
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%2824%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Ashe",
+    "water": "Trout Lake",
+    "date": "2026-11-12",
+    "schedule_row": 2,
+    "layer": "impoundments",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0",
+    "object_id_field": "FID",
+    "official_feature_ids": [
+      13
+    ],
+    "Excel_IDs": [
+      26
+    ],
+    "official_water_names": [
+      "Trout Lake"
+    ],
+    "official_reaches": [
+      {
+        "county": "Ashe",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Trout Lake",
+        "reach": "entire impoundment",
+        "Excel_ID": 26,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=26"
+      }
+    ],
+    "geometry_types": [
+      "Polygon"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%2826%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Ashe",
+    "water": "Big Horse Creek",
+    "date": "2026-11-03",
+    "schedule_row": 3,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      14
+    ],
+    "Excel_IDs": [
+      23
+    ],
+    "official_water_names": [
+      "Big Horse Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Ashe",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Big Horse Creek",
+        "reach": "S.R. 1324 bridge to North Fork New River",
+        "Excel_ID": 23,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=23"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%2823%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Ashe",
+    "water": "South Fork New River",
+    "date": "2026-11-12",
+    "schedule_row": 4,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      16
+    ],
+    "Excel_IDs": [
+      25
+    ],
+    "official_water_names": [
+      "South Fork New River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Ashe",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "South Fork New River",
+        "reach": "upstream end of Todd Island to the S.R. 1351 bridge",
+        "Excel_ID": 25,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=25"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%2825%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Burke",
+    "water": "Jacob Fork",
+    "date": "2026-11-04",
+    "schedule_row": 5,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      91
+    ],
+    "Excel_IDs": [
+      90
+    ],
+    "official_water_names": [
+      "Jacob Fork"
+    ],
+    "official_reaches": [
+      {
+        "county": "Burke",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Jacob Fork",
+        "reach": "Shinny Creek to lower South Mountains State Park boundary",
+        "Excel_ID": 90,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=90"
+      }
+    ],
+    "geometry_types": [
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%2890%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Caldwell",
+    "water": "Wilson Creek",
+    "date": "2026-11-04",
+    "schedule_row": 6,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      110
+    ],
+    "Excel_IDs": [
+      103
+    ],
+    "official_water_names": [
+      "Wilson Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Caldwell",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Wilson Creek",
+        "reach": "game land portion below Lost Cove Creek to Phillips Branch",
+        "Excel_ID": 103,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=103"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28103%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Clay",
+    "water": "Fires Creek",
+    "date": "2026-11-03",
+    "schedule_row": 7,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      128
+    ],
+    "Excel_IDs": [
+      129
+    ],
+    "official_water_names": [
+      "Fires Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Clay",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Fires Creek",
+        "reach": "Rockhouse Creek to the foot bridge in the USFS Fires Creek Picnic Area",
+        "Excel_ID": 129,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=129"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28129%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Graham",
+    "water": "Big Snowbird",
+    "date": "2026-11-05",
+    "schedule_row": 8,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      133
+    ],
+    "Excel_IDs": [
+      137
+    ],
+    "official_water_names": [
+      "(Big) Snowbird Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Graham",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "(Big) Snowbird Creek",
+        "reach": "USFS footbridge at the old railroad junction to USFS Road 2579",
+        "Excel_ID": 137,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=137"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28137%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Haywood",
+    "water": "West Fork Pigeon River",
+    "date": "2026-11-09",
+    "schedule_row": 9,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      145
+    ],
+    "Excel_IDs": [
+      159
+    ],
+    "official_water_names": [
+      "West Fork Pigeon River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Haywood",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "West Fork Pigeon River",
+        "reach": "Queen Creek to the first game land boundary upstream of Lake Logan",
+        "Excel_ID": 159,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=159"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28159%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Henderson",
+    "water": "North Fork Mills River",
+    "date": "2026-11-03",
+    "schedule_row": 10,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      153
+    ],
+    "Excel_IDs": [
+      172
+    ],
+    "official_water_names": [
+      "North Fork Mills River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Henderson",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "North Fork Mills River",
+        "reach": "Hendersonville watershed dam to the lower game land boundary",
+        "Excel_ID": 172,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=172"
+      }
+    ],
+    "geometry_types": [
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28172%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Jackson",
+    "water": "Tuckasegee River",
+    "date": "2026-11-03",
+    "schedule_row": 11,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      171,
+      172,
+      173
+    ],
+    "Excel_IDs": [
+      187
+    ],
+    "official_water_names": [
+      "Tuckasegee River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Jackson",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Tuckasegee River",
+        "reach": "downstream N.C. 107 bridge to the falls located 275 yards upstream of the U.S. 23-441 bridge [marked by a sign on each bank]",
+        "Excel_ID": 187,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=187"
+      }
+    ],
+    "geometry_types": [
+      "LineString",
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28187%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Macon",
+    "water": "Nantahala",
+    "date": "2026-11-04",
+    "schedule_row": 12,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      194
+    ],
+    "Excel_IDs": [
+      215
+    ],
+    "official_water_names": [
+      "Nantahala River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Macon",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Nantahala River",
+        "reach": "Whiteoak Creek to Nantahala hydropower discharge canal",
+        "Excel_ID": 215,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=215"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28215%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Madison",
+    "water": "Big Laurel Creek",
+    "date": "2026-11-05",
+    "schedule_row": 13,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      202
+    ],
+    "Excel_IDs": [
+      235
+    ],
+    "official_water_names": [
+      "Big Laurel Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Madison",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Big Laurel Creek",
+        "reach": "N.C. 208 bridge to the U.S. 25-70 bridge",
+        "Excel_ID": 235,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=235"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28235%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Madison",
+    "water": "Shelton Laurel Creek",
+    "date": "2026-11-05",
+    "schedule_row": 14,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      203
+    ],
+    "Excel_IDs": [
+      236
+    ],
+    "official_water_names": [
+      "Shelton Laurel Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Madison",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Shelton Laurel Creek",
+        "reach": "N.C. 208 bridge at Belva to the confluence with Big Laurel Creek",
+        "Excel_ID": 236,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=236"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28236%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Madison",
+    "water": "Spring Creek",
+    "date": "2026-11-05",
+    "schedule_row": 15,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      204
+    ],
+    "Excel_IDs": [
+      237
+    ],
+    "official_water_names": [
+      "Spring Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Madison",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Spring Creek",
+        "reach": "N.C. 209 bridge at Hot Springs city limits to iron bridge at end of Andrews Avenue",
+        "Excel_ID": 237,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=237"
+      }
+    ],
+    "geometry_types": [
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28237%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "McDowell",
+    "water": "Curtis Creek",
+    "date": "2026-11-05",
+    "schedule_row": 16,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      225
+    ],
+    "Excel_IDs": [
+      259
+    ],
+    "official_water_names": [
+      "Curtis Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "McDowell",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Curtis Creek",
+        "reach": "game land portion downstream of the U.S. Forest Service boundary at Deep Branch",
+        "Excel_ID": 259,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=259"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28259%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "McDowell",
+    "water": "Mill Creek",
+    "date": "2026-11-05",
+    "schedule_row": 17,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      226
+    ],
+    "Excel_IDs": [
+      260
+    ],
+    "official_water_names": [
+      "Mill Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "McDowell",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Mill Creek",
+        "reach": "U.S. 70 bridge to I-40 bridge",
+        "Excel_ID": 260,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=260"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28260%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "McDowell",
+    "water": "Catawba River",
+    "date": "2026-11-05",
+    "schedule_row": 18,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      224
+    ],
+    "Excel_IDs": [
+      258
+    ],
+    "official_water_names": [
+      "Catawba River"
+    ],
+    "official_reaches": [
+      {
+        "county": "McDowell",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Catawba River",
+        "reach": "portion adjacent to Marion Greenway",
+        "Excel_ID": 258,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=258"
+      }
+    ],
+    "geometry_types": [
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28258%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Mitchell",
+    "water": "Cane Creek",
+    "date": "2026-11-09",
+    "schedule_row": 19,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      232,
+      233
+    ],
+    "Excel_IDs": [
+      270
+    ],
+    "official_water_names": [
+      "Cane Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Mitchell",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Cane Creek",
+        "reach": "N.C. 226 bridge to S.R. 1189 bridge",
+        "Excel_ID": 270,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=270"
+      }
+    ],
+    "geometry_types": [
+      "LineString",
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28270%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Mitchell",
+    "water": "North Toe River",
+    "date": "2026-11-13",
+    "schedule_row": 20,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      234
+    ],
+    "Excel_IDs": [
+      271
+    ],
+    "official_water_names": [
+      "North Toe River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Mitchell",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "North Toe River",
+        "reach": "U.S. 19E bridge to N.C. 226 bridge",
+        "Excel_ID": 271,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=271"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28271%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Polk",
+    "water": "Green River",
+    "date": "2026-11-10",
+    "schedule_row": 21,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      246
+    ],
+    "Excel_IDs": [
+      286
+    ],
+    "official_water_names": [
+      "Green River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Polk",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Green River",
+        "reach": "Fishtop Falls Access Area to the confluence with Cove Creek",
+        "Excel_ID": 286,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=286"
+      }
+    ],
+    "geometry_types": [
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28286%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Surry",
+    "water": "Ararat River",
+    "date": "2026-11-12",
+    "schedule_row": 22,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      254
+    ],
+    "Excel_IDs": [
+      303
+    ],
+    "official_water_names": [
+      "Ararat River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Surry",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Ararat River",
+        "reach": "portion adjacent to Ararat River Greenway downstream of N.C. 103 bridge",
+        "Excel_ID": 303,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=303"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28303%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Surry",
+    "water": "Mitchell River",
+    "date": "2026-11-06",
+    "schedule_row": 23,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      255
+    ],
+    "Excel_IDs": [
+      304
+    ],
+    "official_water_names": [
+      "Mitchell River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Surry",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Mitchell River",
+        "reach": "0.6 mile upstream of the end of S.R. 1333 to the lowermost bridge on S.R. 1330",
+        "Excel_ID": 304,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=304"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28304%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Swain",
+    "water": "Tuckasegee River",
+    "date": "2026-11-04",
+    "schedule_row": 24,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      355
+    ],
+    "Excel_IDs": [
+      417
+    ],
+    "official_water_names": [
+      "Tuckasegee River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Swain",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Tuckasegee River",
+        "reach": "U.S. 19 bridge to Slope Street bridge",
+        "Excel_ID": 417,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=417"
+      }
+    ],
+    "geometry_types": [
+      "MultiLineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28417%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Transylvania",
+    "water": "East Fork French Broad River",
+    "date": "2026-11-10",
+    "schedule_row": 25,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      282
+    ],
+    "Excel_IDs": [
+      325
+    ],
+    "official_water_names": [
+      "East Fork French Broad River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Transylvania",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "East Fork French Broad River",
+        "reach": "East Fork Baptist Church to 350 yards downstream of Whitmire Falls, marked by a sign on both banks",
+        "Excel_ID": 325,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=325"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28325%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Transylvania",
+    "water": "Little River",
+    "date": "2026-11-10",
+    "schedule_row": 26,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      283
+    ],
+    "Excel_IDs": [
+      326
+    ],
+    "official_water_names": [
+      "Little River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Transylvania",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Little River",
+        "reach": "confluence of Lake Dense to 100 yards downstream of Hooker Falls",
+        "Excel_ID": 326,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=326"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28326%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Watauga",
+    "water": "Watauga River",
+    "date": "2026-11-10",
+    "schedule_row": 27,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      291,
+      1809
+    ],
+    "Excel_IDs": [
+      345,
+      518
+    ],
+    "official_water_names": [
+      "Watauga River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Watauga",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Watauga River",
+        "reach": "S.R. 1114 bridge to Valle Crucis Community Park lower boundary",
+        "Excel_ID": 345,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=345"
+      },
+      {
+        "county": "Watauga",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Watauga River",
+        "reach": "S.R. 1103 bridge to confluence with Laurel Creek",
+        "Excel_ID": 518,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=518"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28345%2C518%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": "Schedule names water only; it does not allocate stocking to specific GIS sub-reaches."
+  },
+  {
+    "county": "Watauga",
+    "water": "Lake Coffey",
+    "date": "2026-11-10",
+    "schedule_row": 28,
+    "layer": "impoundments",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0",
+    "object_id_field": "FID",
+    "official_feature_ids": [
+      12
+    ],
+    "Excel_IDs": [
+      346
+    ],
+    "official_water_names": [
+      "Lake Coffey"
+    ],
+    "official_reaches": [
+      {
+        "county": "Watauga",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Lake Coffey",
+        "reach": "entire impoundment",
+        "Excel_ID": 346,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=346"
+      }
+    ],
+    "geometry_types": [
+      "Polygon"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28346%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Wilkes",
+    "water": "East Prong Roaring River",
+    "date": "2026-11-02",
+    "schedule_row": 29,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      313
+    ],
+    "Excel_IDs": [
+      374
+    ],
+    "official_water_names": [
+      "East Prong Roaring River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Wilkes",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "East Prong Roaring River",
+        "reach": "Bullhead Creek downstream to Stone Mountain State Park lower boundary",
+        "Excel_ID": 374,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=374"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28374%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Wilkes",
+    "water": "Stone Mountain Creek",
+    "date": "2026-11-02",
+    "schedule_row": 30,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      316
+    ],
+    "Excel_IDs": [
+      377
+    ],
+    "official_water_names": [
+      "Stone Mountain Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Wilkes",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Stone Mountain Creek",
+        "reach": "from falls at Alleghany Co. line to confluence with East Prong Roaring River and Bullhead Creek",
+        "Excel_ID": 377,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=377"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28377%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Wilkes",
+    "water": "Reddies River",
+    "date": "2026-11-03",
+    "schedule_row": 31,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      349
+    ],
+    "Excel_IDs": [
+      411
+    ],
+    "official_water_names": [
+      "Reddies River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Wilkes",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Reddies River",
+        "reach": "Town of North Wilksboro water intake dam to confluence with Yadkin River",
+        "Excel_ID": 411,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=411"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28411%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  },
+  {
+    "county": "Wilkes",
+    "water": "Elk Creek",
+    "date": "2026-11-03",
+    "schedule_row": 32,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      314,
+      315
+    ],
+    "Excel_IDs": [
+      375,
+      376
+    ],
+    "official_water_names": [
+      "Elk Creek"
+    ],
+    "official_reaches": [
+      {
+        "county": "Wilkes",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Elk Creek",
+        "reach": "Watauga Co. line to lower boundary of Blue Ridge Mountain Club",
+        "Excel_ID": 375,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=375"
+      },
+      {
+        "county": "Wilkes",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Elk Creek",
+        "reach": "portion on Leatherwood Mountains Development",
+        "Excel_ID": 376,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=376"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28375%2C376%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": "Schedule names water only; it does not allocate stocking to specific GIS sub-reaches."
+  },
+  {
+    "county": "Yancey",
+    "water": "Cane River",
+    "date": "2026-11-09",
+    "schedule_row": 33,
+    "layer": "streams",
+    "layer_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "object_id_field": "OBJECTID_12",
+    "official_feature_ids": [
+      363
+    ],
+    "Excel_IDs": [
+      419
+    ],
+    "official_water_names": [
+      "Cane River"
+    ],
+    "official_reaches": [
+      {
+        "county": "Yancey",
+        "classification": "Delayed Harvest Trout Waters",
+        "water": "Cane River",
+        "reach": "Blackberry Ridge Road to downstream boundary of Cane River County Park",
+        "Excel_ID": 419,
+        "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=419"
+      }
+    ],
+    "geometry_types": [
+      "LineString"
+    ],
+    "query_url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28419%29&outFields=%2A&outSR=4326&returnGeometry=true",
+    "stocking_scope_caveat": null
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "county": "Ashe",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Big Horse Creek",
+    "reach": "S.R. 1324 bridge to North Fork New River",
+    "Excel_ID": 23,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=23"
+  },
+  {
+    "county": "Ashe",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Helton Creek",
+    "reach": "900 yards upstream of S.R. 1372 bridge [marked by a sign on both banks] to a point adjacent to intersection of N.C. 16 and S.R. 1536",
+    "Excel_ID": 24,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=24"
+  },
+  {
+    "county": "Ashe",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "South Fork New River",
+    "reach": "upstream end of Todd Island to the S.R. 1351 bridge",
+    "Excel_ID": 25,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=25"
+  },
+  {
+    "county": "Ashe",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Trout Lake",
+    "reach": "entire impoundment",
+    "Excel_ID": 26,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=26"
+  },
+  {
+    "county": "Burke",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Jacob Fork",
+    "reach": "Shinny Creek to lower South Mountains State Park boundary",
+    "Excel_ID": 90,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=90"
+  },
+  {
+    "county": "Caldwell",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Wilson Creek",
+    "reach": "game land portion below Lost Cove Creek to Phillips Branch",
+    "Excel_ID": 103,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=103"
+  },
+  {
+    "county": "Clay",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Fires Creek",
+    "reach": "Rockhouse Creek to the foot bridge in the USFS Fires Creek Picnic Area",
+    "Excel_ID": 129,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=129"
+  },
+  {
+    "county": "Graham",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "(Big) Snowbird Creek",
+    "reach": "USFS footbridge at the old railroad junction to USFS Road 2579",
+    "Excel_ID": 137,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=137"
+  },
+  {
+    "county": "Haywood",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "West Fork Pigeon River",
+    "reach": "Queen Creek to the first game land boundary upstream of Lake Logan",
+    "Excel_ID": 159,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=159"
+  },
+  {
+    "county": "Henderson",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "North Fork Mills River",
+    "reach": "Hendersonville watershed dam to the lower game land boundary",
+    "Excel_ID": 172,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=172"
+  },
+  {
+    "county": "Jackson",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Tuckasegee River",
+    "reach": "downstream N.C. 107 bridge to the falls located 275 yards upstream of the U.S. 23-441 bridge [marked by a sign on each bank]",
+    "Excel_ID": 187,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=187"
+  },
+  {
+    "county": "Macon",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Nantahala River",
+    "reach": "Whiteoak Creek to Nantahala hydropower discharge canal",
+    "Excel_ID": 215,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=215"
+  },
+  {
+    "county": "Madison",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Big Laurel Creek",
+    "reach": "N.C. 208 bridge to the U.S. 25-70 bridge",
+    "Excel_ID": 235,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=235"
+  },
+  {
+    "county": "Madison",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Shelton Laurel Creek",
+    "reach": "N.C. 208 bridge at Belva to the confluence with Big Laurel Creek",
+    "Excel_ID": 236,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=236"
+  },
+  {
+    "county": "Madison",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Spring Creek",
+    "reach": "N.C. 209 bridge at Hot Springs city limits to iron bridge at end of Andrews Avenue",
+    "Excel_ID": 237,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=237"
+  },
+  {
+    "county": "McDowell",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Catawba River",
+    "reach": "portion adjacent to Marion Greenway",
+    "Excel_ID": 258,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=258"
+  },
+  {
+    "county": "McDowell",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Curtis Creek",
+    "reach": "game land portion downstream of the U.S. Forest Service boundary at Deep Branch",
+    "Excel_ID": 259,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=259"
+  },
+  {
+    "county": "McDowell",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Mill Creek",
+    "reach": "U.S. 70 bridge to I-40 bridge",
+    "Excel_ID": 260,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=260"
+  },
+  {
+    "county": "Mitchell",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Cane Creek",
+    "reach": "N.C. 226 bridge to S.R. 1189 bridge",
+    "Excel_ID": 270,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=270"
+  },
+  {
+    "county": "Mitchell",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "North Toe River",
+    "reach": "U.S. 19E bridge to N.C. 226 bridge",
+    "Excel_ID": 271,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=271"
+  },
+  {
+    "county": "Polk",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Green River",
+    "reach": "Fishtop Falls Access Area to the confluence with Cove Creek",
+    "Excel_ID": 286,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=286"
+  },
+  {
+    "county": "Surry",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Ararat River",
+    "reach": "portion adjacent to Ararat River Greenway downstream of N.C. 103 bridge",
+    "Excel_ID": 303,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=303"
+  },
+  {
+    "county": "Surry",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Mitchell River",
+    "reach": "0.6 mile upstream of the end of S.R. 1333 to the lowermost bridge on S.R. 1330",
+    "Excel_ID": 304,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=304"
+  },
+  {
+    "county": "Swain",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Tuckasegee River",
+    "reach": "U.S. 19 bridge to Slope Street bridge",
+    "Excel_ID": 417,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=417"
+  },
+  {
+    "county": "Transylvania",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "East Fork French Broad River",
+    "reach": "East Fork Baptist Church to 350 yards downstream of Whitmire Falls, marked by a sign on both banks",
+    "Excel_ID": 325,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=325"
+  },
+  {
+    "county": "Transylvania",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Little River",
+    "reach": "confluence of Lake Dense to 100 yards downstream of Hooker Falls",
+    "Excel_ID": 326,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=326"
+  },
+  {
+    "county": "Watauga",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Lake Coffey",
+    "reach": "entire impoundment",
+    "Excel_ID": 346,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=346"
+  },
+  {
+    "county": "Watauga",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "South Fork New River",
+    "reach": "upstream end of Todd Island to the S.R. 1351 bridge",
+    "Excel_ID": 25,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=25"
+  },
+  {
+    "county": "Watauga",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Watauga River",
+    "reach": "S.R. 1114 bridge to Valle Crucis Community Park lower boundary",
+    "Excel_ID": 345,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=345"
+  },
+  {
+    "county": "Watauga",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Watauga River",
+    "reach": "S.R. 1103 bridge to confluence with Laurel Creek",
+    "Excel_ID": 518,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=518"
+  },
+  {
+    "county": "Wilkes",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "East Prong Roaring River",
+    "reach": "Bullhead Creek downstream to Stone Mountain State Park lower boundary",
+    "Excel_ID": 374,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=374"
+  },
+  {
+    "county": "Wilkes",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Elk Creek",
+    "reach": "Watauga Co. line to lower boundary of Blue Ridge Mountain Club",
+    "Excel_ID": 375,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=375"
+  },
+  {
+    "county": "Wilkes",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Elk Creek",
+    "reach": "portion on Leatherwood Mountains Development",
+    "Excel_ID": 376,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=376"
+  },
+  {
+    "county": "Wilkes",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Reddies River",
+    "reach": "Town of North Wilksboro water intake dam to confluence with Yadkin River",
+    "Excel_ID": 411,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=411"
+  },
+  {
+    "county": "Wilkes",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Stone Mountain Creek",
+    "reach": "from falls at Alleghany Co. line to confluence with East Prong Roaring River and Bullhead Creek",
+    "Excel_ID": 377,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=377"
+  },
+  {
+    "county": "Yancey",
+    "classification": "Delayed Harvest Trout Waters",
+    "water": "Cane River",
+    "reach": "Blackberry Ridge Road to downstream boundary of Cane River County Park",
+    "Excel_ID": 419,
+    "map_url": "https://ncpaws.org/ncwrcmaps/fishingareas?PMTWStreamID=419"
+  }
+]

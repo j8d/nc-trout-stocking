@@ -1,0 +1,405 @@
+[
+  {
+    "id": "ashe-helton-creek",
+    "county": "Ashe",
+    "name": "Helton Creek",
+    "date": "2026-11-02",
+    "lat": 36.5491076562241,
+    "lng": -81.471632276349,
+    "section": "900 yards upstream of S.R. 1372 bridge [marked by a sign on both banks] to a point adjacent to intersection of N.C. 16 and S.R. 1536",
+    "featureIds": [
+      15
+    ]
+  },
+  {
+    "id": "ashe-trout-lake",
+    "county": "Ashe",
+    "name": "Trout Lake",
+    "date": "2026-11-12",
+    "lat": 36.422784391796995,
+    "lng": -81.32378890310797,
+    "section": "entire impoundment",
+    "featureIds": [
+      13
+    ]
+  },
+  {
+    "id": "ashe-big-horse-creek",
+    "county": "Ashe",
+    "name": "Big Horse Creek",
+    "date": "2026-11-03",
+    "lat": 36.4927043991909,
+    "lng": -81.508311829686,
+    "section": "S.R. 1324 bridge to North Fork New River",
+    "featureIds": [
+      14
+    ]
+  },
+  {
+    "id": "ashe-south-fork-new-river",
+    "county": "Ashe",
+    "name": "South Fork New River",
+    "date": "2026-11-12",
+    "lat": 36.2831069197387,
+    "lng": -81.5739544170526,
+    "section": "upstream end of Todd Island to the S.R. 1351 bridge",
+    "featureIds": [
+      16
+    ]
+  },
+  {
+    "id": "burke-jacob-fork",
+    "county": "Burke",
+    "name": "Jacob Fork",
+    "date": "2026-11-04",
+    "lat": 35.5957274087315,
+    "lng": -81.6199894111356,
+    "section": "Shinny Creek to lower South Mountains State Park boundary",
+    "featureIds": [
+      91
+    ]
+  },
+  {
+    "id": "caldwell-wilson-creek",
+    "county": "Caldwell",
+    "name": "Wilson Creek",
+    "date": "2026-11-04",
+    "lat": 35.9850682170409,
+    "lng": -81.7620717426958,
+    "section": "game land portion below Lost Cove Creek to Phillips Branch",
+    "featureIds": [
+      110
+    ]
+  },
+  {
+    "id": "clay-fires-creek",
+    "county": "Clay",
+    "name": "Fires Creek",
+    "date": "2026-11-03",
+    "lat": 35.1023207536154,
+    "lng": -83.847362901915,
+    "section": "Rockhouse Creek to the foot bridge in the USFS Fires Creek Picnic Area",
+    "featureIds": [
+      128
+    ]
+  },
+  {
+    "id": "graham-big-snowbird",
+    "county": "Graham",
+    "name": "Big Snowbird",
+    "date": "2026-11-05",
+    "lat": 35.2738956524033,
+    "lng": -83.9211123337665,
+    "section": "USFS footbridge at the old railroad junction to USFS Road 2579",
+    "featureIds": [
+      133
+    ]
+  },
+  {
+    "id": "haywood-west-fork-pigeon-river",
+    "county": "Haywood",
+    "name": "West Fork Pigeon River",
+    "date": "2026-11-09",
+    "lat": 35.3915339791945,
+    "lng": -82.9408374580698,
+    "section": "Queen Creek to the first game land boundary upstream of Lake Logan",
+    "featureIds": [
+      145
+    ]
+  },
+  {
+    "id": "henderson-north-fork-mills-river",
+    "county": "Henderson",
+    "name": "North Fork Mills River",
+    "date": "2026-11-03",
+    "lat": 35.4192374831903,
+    "lng": -82.6590915420896,
+    "section": "Hendersonville watershed dam to the lower game land boundary",
+    "featureIds": [
+      153
+    ]
+  },
+  {
+    "id": "jackson-tuckasegee-river",
+    "county": "Jackson",
+    "name": "Tuckasegee River",
+    "date": "2026-11-03",
+    "lat": 35.3404558284256,
+    "lng": -83.2127169311461,
+    "section": "downstream N.C. 107 bridge to the falls located 275 yards upstream of the U.S. 23-441 bridge [marked by a sign on each bank]",
+    "featureIds": [
+      171,
+      172,
+      173
+    ]
+  },
+  {
+    "id": "macon-nantahala",
+    "county": "Macon",
+    "name": "Nantahala",
+    "date": "2026-11-04",
+    "lat": 35.2598899933624,
+    "lng": -83.6571956558277,
+    "section": "Whiteoak Creek to Nantahala hydropower discharge canal",
+    "featureIds": [
+      194
+    ]
+  },
+  {
+    "id": "madison-big-laurel-creek",
+    "county": "Madison",
+    "name": "Big Laurel Creek",
+    "date": "2026-11-05",
+    "lat": 35.920964000449,
+    "lng": -82.7615970505022,
+    "section": "N.C. 208 bridge to the U.S. 25-70 bridge",
+    "featureIds": [
+      202
+    ]
+  },
+  {
+    "id": "madison-shelton-laurel-creek",
+    "county": "Madison",
+    "name": "Shelton Laurel Creek",
+    "date": "2026-11-05",
+    "lat": 35.9277733180744,
+    "lng": -82.7499033058514,
+    "section": "N.C. 208 bridge at Belva to the confluence with Big Laurel Creek",
+    "featureIds": [
+      203
+    ]
+  },
+  {
+    "id": "madison-spring-creek",
+    "county": "Madison",
+    "name": "Spring Creek",
+    "date": "2026-11-05",
+    "lat": 35.8878770477682,
+    "lng": -82.8284488474963,
+    "section": "N.C. 209 bridge at Hot Springs city limits to iron bridge at end of Andrews Avenue",
+    "featureIds": [
+      204
+    ]
+  },
+  {
+    "id": "mcdowell-curtis-creek",
+    "county": "McDowell",
+    "name": "Curtis Creek",
+    "date": "2026-11-05",
+    "lat": 35.6559937330231,
+    "lng": -82.1795052466479,
+    "section": "game land portion downstream of the U.S. Forest Service boundary at Deep Branch",
+    "featureIds": [
+      225
+    ]
+  },
+  {
+    "id": "mcdowell-mill-creek",
+    "county": "McDowell",
+    "name": "Mill Creek",
+    "date": "2026-11-05",
+    "lat": 35.6275645469375,
+    "lng": -82.1812839171987,
+    "section": "U.S. 70 bridge to I-40 bridge",
+    "featureIds": [
+      226
+    ]
+  },
+  {
+    "id": "mcdowell-catawba-river",
+    "county": "McDowell",
+    "name": "Catawba River",
+    "date": "2026-11-05",
+    "lat": 35.700395158047,
+    "lng": -82.0500204673224,
+    "section": "portion adjacent to Marion Greenway",
+    "featureIds": [
+      224
+    ]
+  },
+  {
+    "id": "mitchell-cane-creek",
+    "county": "Mitchell",
+    "name": "Cane Creek",
+    "date": "2026-11-09",
+    "lat": 36.0147194083706,
+    "lng": -82.1581560616753,
+    "section": "N.C. 226 bridge to S.R. 1189 bridge",
+    "featureIds": [
+      232,
+      233
+    ]
+  },
+  {
+    "id": "mitchell-north-toe-river",
+    "county": "Mitchell",
+    "name": "North Toe River",
+    "date": "2026-11-13",
+    "lat": 35.9186984584979,
+    "lng": -82.0774192308117,
+    "section": "U.S. 19E bridge to N.C. 226 bridge",
+    "featureIds": [
+      234
+    ]
+  },
+  {
+    "id": "polk-green-river",
+    "county": "Polk",
+    "name": "Green River",
+    "date": "2026-11-10",
+    "lat": 35.2741858487796,
+    "lng": -82.3054105944008,
+    "section": "Fishtop Falls Access Area to the confluence with Cove Creek",
+    "featureIds": [
+      246
+    ]
+  },
+  {
+    "id": "surry-ararat-river",
+    "county": "Surry",
+    "name": "Ararat River",
+    "date": "2026-11-12",
+    "lat": 36.4914683676424,
+    "lng": -80.5952553588407,
+    "section": "portion adjacent to Ararat River Greenway downstream of N.C. 103 bridge",
+    "featureIds": [
+      254
+    ]
+  },
+  {
+    "id": "surry-mitchell-river",
+    "county": "Surry",
+    "name": "Mitchell River",
+    "date": "2026-11-06",
+    "lat": 36.4129292076838,
+    "lng": -80.8481040289112,
+    "section": "0.6 mile upstream of the end of S.R. 1333 to the lowermost bridge on S.R. 1330",
+    "featureIds": [
+      255
+    ]
+  },
+  {
+    "id": "swain-tuckasegee-river",
+    "county": "Swain",
+    "name": "Tuckasegee River",
+    "date": "2026-11-04",
+    "lat": 35.4335709054084,
+    "lng": -83.4317173337375,
+    "section": "U.S. 19 bridge to Slope Street bridge",
+    "featureIds": [
+      355
+    ]
+  },
+  {
+    "id": "transylvania-east-fork-french-broad-river",
+    "county": "Transylvania",
+    "name": "East Fork French Broad River",
+    "date": "2026-11-10",
+    "lat": 35.1316890053059,
+    "lng": -82.7830110938383,
+    "section": "East Fork Baptist Church to 350 yards downstream of Whitmire Falls, marked by a sign on both banks",
+    "featureIds": [
+      282
+    ]
+  },
+  {
+    "id": "transylvania-little-river",
+    "county": "Transylvania",
+    "name": "Little River",
+    "date": "2026-11-10",
+    "lat": 35.196775087565,
+    "lng": -82.6156606813702,
+    "section": "confluence of Lake Dense to 100 yards downstream of Hooker Falls",
+    "featureIds": [
+      283
+    ]
+  },
+  {
+    "id": "watauga-watauga-river",
+    "county": "Watauga",
+    "name": "Watauga River",
+    "date": "2026-11-10",
+    "lat": 36.2538520699338,
+    "lng": -81.8475709165797,
+    "section": "S.R. 1114 bridge to Valle Crucis Community Park lower boundary; S.R. 1103 bridge to confluence with Laurel Creek",
+    "featureIds": [
+      291,
+      1809
+    ],
+    "scopeNote": "Multiple designated reaches are shown. The schedule gives one date for this water and does not specify which sub-reaches receive fish."
+  },
+  {
+    "id": "watauga-lake-coffey",
+    "county": "Watauga",
+    "name": "Lake Coffey",
+    "date": "2026-11-10",
+    "lat": 36.2048731015418,
+    "lng": -81.87645553431369,
+    "section": "entire impoundment",
+    "featureIds": [
+      12
+    ]
+  },
+  {
+    "id": "wilkes-east-prong-roaring-river",
+    "county": "Wilkes",
+    "name": "East Prong Roaring River",
+    "date": "2026-11-02",
+    "lat": 36.3856199944023,
+    "lng": -81.0660454929541,
+    "section": "Bullhead Creek downstream to Stone Mountain State Park lower boundary",
+    "featureIds": [
+      313
+    ]
+  },
+  {
+    "id": "wilkes-stone-mountain-creek",
+    "county": "Wilkes",
+    "name": "Stone Mountain Creek",
+    "date": "2026-11-02",
+    "lat": 36.3985351301064,
+    "lng": -81.0533397557115,
+    "section": "from falls at Alleghany Co. line to confluence with East Prong Roaring River and Bullhead Creek",
+    "featureIds": [
+      316
+    ]
+  },
+  {
+    "id": "wilkes-reddies-river",
+    "county": "Wilkes",
+    "name": "Reddies River",
+    "date": "2026-11-03",
+    "lat": 36.1576065436017,
+    "lng": -81.151178971669,
+    "section": "Town of North Wilksboro water intake dam to confluence with Yadkin River",
+    "featureIds": [
+      349
+    ]
+  },
+  {
+    "id": "wilkes-elk-creek",
+    "county": "Wilkes",
+    "name": "Elk Creek",
+    "date": "2026-11-03",
+    "lat": 36.1348976588107,
+    "lng": -81.4971010058571,
+    "section": "Watauga Co. line to lower boundary of Blue Ridge Mountain Club; portion on Leatherwood Mountains Development",
+    "featureIds": [
+      314,
+      315
+    ],
+    "scopeNote": "Multiple designated reaches are shown. The schedule gives one date for this water and does not specify which sub-reaches receive fish."
+  },
+  {
+    "id": "yancey-cane-river",
+    "county": "Yancey",
+    "name": "Cane River",
+    "date": "2026-11-09",
+    "lat": 35.9140268455724,
+    "lng": -82.3841726551821,
+    "section": "Blackberry Ridge Road to downstream boundary of Cane River County Park",
+    "featureIds": [
+      363
+    ]
+  }
+]
