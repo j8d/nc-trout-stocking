@@ -14,7 +14,7 @@
   <body>
     <a class="skip-link" href="#waters">Skip to stocking schedule</a>
     <header class="masthead">
-      <div class="brand">
+      <a class="brand" href="/nc-trout-stocking/" aria-label="Trout stocking map — home">
         <svg aria-hidden="true" viewBox="0 0 48 48">
           <path d="M4 30 16 11l9 13 6-8 13 20M10 36q8-8 16 0t17 0" />
         </svg>
@@ -22,7 +22,7 @@
           <p class="eyebrow">North Carolina · Delayed harvest</p>
           <h1>Trout stocking map</h1>
         </div>
-      </div>
+      </a>
       <div class="edition">
         <strong>November 2026</strong><span>33 waters · 19 counties</span>
       </div>
@@ -122,10 +122,11 @@
           </p>
           <p class="map-key">
             <span class="line-key" aria-hidden="true"></span>Delayed-harvest
-            section <span class="pin-key" aria-hidden="true">2</span>November
+            section <span class="pin-key" aria-hidden="true">#</span>November
             stocking day <span class="cluster-key">Nearby waters</span>Count
             circles zoom to separate pins
           </p>
+          <p id="label-hint" class="label-hint">Names stay visible without hovering. Zoom or filter for more detail.</p>
           <section
             id="detail"
             class="detail"

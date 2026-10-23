@@ -48,6 +48,8 @@ Tests cover every schedule row/date, location provenance and geometry, filters, 
 
 GitHub Pages uses GitHub Actions. Pull requests run the same verification as `main`. Deployment depends on the verification job and publishes **that job's built artifact** only after data, unit, browser and dependency checks succeed. The Vite base path is `/nc-trout-stocking/`, so assets and data work on project Pages.
 
+**Owner-controlled merges:** only `j8d` can merge through a PR. A PR and passing `verify` check are mandatory even for the owner. `j8d` alone can bypass the review requirement to handle self-authored PRs. Agents prepare PRs but do not approve or merge them. See [GOVERNANCE.md](GOVERNANCE.md) for active server rules, CODEOWNERS, verification commands and the public-review/shared-credential limitations.
+
 ## CI browser environment
 
 The `verify` job runs inside the official `mcr.microsoft.com/playwright:v1.58.2-noble` image pinned by SHA-256 digest. It already includes Playwright's browser binaries and Linux dependencies, so CI does not run `playwright install --with-deps` or download fonts/libraries from an Ubuntu mirror on every run. `npm ci` still installs the project's matching Playwright package; the image intentionally does not replace npm dependencies.

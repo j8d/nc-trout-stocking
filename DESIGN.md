@@ -8,4 +8,8 @@ Visual vocabulary: warm paper (#f6f4ee), deep pine (#193f38), dark ink (#1c302c)
 
 Map semantics: solid pine strokes for official delayed-harvest sections, rust for selection; representative date markers along those sections. Explain them directly above the map. Never label a marker as an exact stocking point. Always retain attribution. Basemap failure leaves local section outlines and complete list available.
 
+Water names: a default-on, noninteractive label pane sits above sections and below date pins/clusters. Names use DOM text, remain independent of clustering, and have short haloed leaders to their representative water locations. Duplicate Tuckasegee names include a separate county line. Screen-space placement avoids other labels, pins, clusters, controls and map edges; selection gets first placement. At dense overview scales not every name can fit: omit colliding names rather than overlap, show an honest visible-name count, and invite zoom/filter for more. All schedule names remain available in the accessible list. Keep existing map dimensions; never enlarge the map just to force all 33 labels in. Labels are hidden during pan/zoom and laid out again afterward, including resize/filter/reset.
+
+Navigation: the entire masthead icon/title is one native keyboard-focusable home link to `/nc-trout-stocking/`. Normal navigation deliberately discards filters, selection and URL fragments. The legend uses `#` for an example November stocking day, never a misleading fixed date.
+
 Feedback: result count is an aria-live status; no results offers a filter reset. Data errors are explicit; map tiles can fail independently. Selection must remain visible and focus stays on the triggering list control.
