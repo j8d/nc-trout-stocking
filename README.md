@@ -48,6 +48,8 @@ Tests cover every schedule row/date, location provenance and geometry, filters, 
 
 GitHub Pages uses GitHub Actions. Pull requests run the same verification as `main`. Deployment depends on the verification job and publishes **that job's built artifact** only after data, unit, browser and dependency checks succeed. The Vite base path is `/nc-trout-stocking/`, so assets and data work on project Pages.
 
+**Owner-controlled merges:** only `j8d` can merge through a PR. A PR and passing `verify` check are mandatory even for the owner. `j8d` alone can bypass the review requirement to handle self-authored PRs. Agents prepare PRs but do not approve or merge them. See [GOVERNANCE.md](GOVERNANCE.md) for active server rules, CODEOWNERS, verification commands and the public-review/shared-credential limitations.
+
 ## Architecture and privacy
 
 Vanilla ES modules + Leaflet, built by Vite. No backend, logins, analytics, tracking scripts or API keys. Dependencies are bundled rather than loaded from a third-party script CDN. The basemap uses [OpenStreetMap standard tiles](https://operations.osmfoundation.org/policies/tiles/); tile requests expose the browser's IP and normal HTTP metadata to the tile provider. GitHub Pages serves the site and may retain its normal hosting logs. Do not prefetch or bulk-download tiles. Failed tiles leave the local water outlines, pins and complete list available.

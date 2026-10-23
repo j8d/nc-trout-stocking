@@ -29,7 +29,7 @@ tiles.on("tileerror", () => {
 });
 const sectionGroup = L.featureGroup().addTo(map);
 const markerGroup = L.markerClusterGroup({
-  maxClusterRadius: 32,
+  maxClusterRadius: 50,
   disableClusteringAtZoom: 12,
   showCoverageOnHover: false,
   animate: false,
@@ -50,6 +50,97 @@ let waters = [],
   selected = "";
 const layers = new Map(),
   markers = new Map();
+
+// Screen-space names are independent of marker clustering. Pins stay at their
+// representative coordinates; only labels move, with leaders back to the water.
+const nameOverlay = node("div", "map-water-names");
+nameOverlay.setAttribute("aria-hidden", "true");
+const nameLeaders = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+nameLeaders.classList.add("map-name-leaders");
+nameOverlay.append(nameLeaders);
+const namePane = map.createPane("waterNames");
+namePane.style.zIndex = 550; // Below date pins/clusters (600), above sections (400).
+namePane.style.pointerEvents = "none";
+namePane.append(nameOverlay);
+let nameFrame;
+function scheduleNames() {
+  cancelAnimationFrame(nameFrame);
+  nameFrame = requestAnimationFrame(layoutNames);
+}
+map.on("moveend zoomend resize", scheduleNames);
+map.on("movestart zoomstart", () => { nameOverlay.hidden = true; });
+
+function layoutNames() {
+  nameOverlay.hidden = false;
+  nameOverlay.querySelectorAll(".map-water-label").forEach((label) => label.remove());
+  nameLeaders.replaceChildren();
+  const size = map.getSize();
+  const origin = map.containerPointToLayerPoint([0, 0]);
+  Object.assign(nameOverlay.style, {
+    left: `${origin.x}px`, top: `${origin.y}px`, width: `${size.x}px`, height: `${size.y}px`,
+  });
+  const mapRect = map.getContainer().getBoundingClientRect();
+  const overlaps = (a, b) => a.left < b.right + 3 && a.right > b.left - 3
+    && a.top < b.bottom + 3 && a.bottom > b.top - 3;
+  // Keep labels off date pins, count circles, zoom controls and attribution.
+  const occupied = [...map.getContainer().querySelectorAll(
+    ".date-marker, .water-cluster, .leaflet-control",
+  )].map((element) => {
+    const rect = element.getBoundingClientRect();
+    return { left: rect.left - mapRect.left, right: rect.right - mapRect.left,
+      top: rect.top - mapRect.top, bottom: rect.bottom - mapRect.top };
+  });
+  let shown = 0;
+  const items = [...visible].sort((a, b) =>
+    Number(b.id === selected) - Number(a.id === selected) || a.name.localeCompare(b.name));
+  for (const water of items) {
+    const point = map.latLngToContainerPoint([water.lat, water.lng]);
+    if (point.x < 0 || point.x > size.x || point.y < 0 || point.y > size.y) continue;
+    const duplicate = waters.some((other) => other.id !== water.id && other.name === water.name);
+    const label = node("div", "map-water-label", water.name);
+    if (duplicate) label.append(node("span", "map-label-county", ` · ${water.county} County`));
+    label.dataset.waterId = water.id;
+    label.classList.toggle("is-selected", water.id === selected);
+    nameOverlay.append(label);
+    const width = label.offsetWidth, height = label.offsetHeight;
+    let placement;
+    // Prefer nearby placements; a bounded search prevents misleading long leaders.
+    for (const radius of [22, 38, 56]) {
+      for (const [dx, dy] of [[1, 0], [-1, 0], [0, -1], [0, 1], [1, -1], [-1, -1], [1, 1], [-1, 1]]) {
+        const left = Math.max(8, Math.min(size.x - width - 8,
+          point.x + dx * radius - (dx < 0 ? width : dx === 0 ? width / 2 : 0)));
+        const top = Math.max(8, Math.min(size.y - height - 8,
+          point.y + dy * radius - (dy < 0 ? height : dy === 0 ? height / 2 : 0)));
+        const box = { left, top, right: left + width, bottom: top + height };
+        if (!occupied.some((other) => overlaps(box, other))) {
+          placement = box;
+          break;
+        }
+      }
+      if (placement) break;
+    }
+    if (!placement) { label.hidden = true; continue; }
+    occupied.push(placement);
+    label.style.left = `${placement.left}px`;
+    label.style.top = `${placement.top}px`;
+    const leader = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    leader.setAttribute("x1", point.x);
+    leader.setAttribute("y1", point.y);
+    leader.setAttribute("x2", Math.max(placement.left, Math.min(point.x, placement.right)));
+    leader.setAttribute("y2", Math.max(placement.top, Math.min(point.y, placement.bottom)));
+    const halo = leader.cloneNode();
+    halo.classList.add("leader-halo");
+    const anchor = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    anchor.setAttribute("cx", point.x);
+    anchor.setAttribute("cy", point.y);
+    anchor.setAttribute("r", 2.5);
+    nameLeaders.append(halo, leader, anchor);
+    shown++;
+  }
+  $("#label-hint").textContent = visible.length
+    ? `${shown} of ${visible.length} names shown. Zoom or filter to make room for more.`
+    : "No water names to show.";
+}
 
 function node(tag, className, text) {
   const element = document.createElement(tag);
@@ -139,6 +230,7 @@ function selectWater(id, zoom = true) {
       });
     else map.setView([water.lat, water.lng], 14, { animate: false });
   }
+  scheduleNames();
   saveUrl();
 }
 
@@ -241,6 +333,7 @@ function renderMap() {
     markers.set(water.id, marker);
     labelMarker(marker, water);
   }
+  scheduleNames();
 }
 
 function applyFilters(fit = true) {

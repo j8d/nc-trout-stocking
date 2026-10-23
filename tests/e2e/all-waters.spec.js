@@ -14,6 +14,7 @@ test('every scheduled water selects its own official date and section', async ({
     const day = Number(water.date.slice(-2));
     await expect(page.locator('#detail .stock-date')).toContainText(`November ${day}, 2026`);
     await expect(page.locator('.date-marker.selected')).toHaveText(String(day));
+    await expect(page.locator(`.map-water-label[data-water-id="${water.id}"]`)).toBeVisible();
     expect(new URL(page.url()).searchParams.get('water')).toBe(water.id);
     if (water.scopeNote) await expect(page.locator('#detail')).toContainText(water.scopeNote);
   }
