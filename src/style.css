@@ -354,11 +354,7 @@ h2 {
   margin-left: auto;
   color: var(--pine);
 }
-/* Expanded reading must not end at the compact schedule's scroll boundary. */
-.schedule:has(.guide-disclosure[open]) {
-  max-height: none;
-  overflow: visible;
-}
+/* Keep the same scroll container when guides open so lower-row triggers stay put. */
 .guide-disclosure > summary {
   min-height: 44px;
   padding: 10px 16px;

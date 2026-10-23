@@ -86,7 +86,19 @@ for (const width of [320, 768, 1024, 1440]) {
     await expect(page.locator('#detail .planning-note')).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     expect(await page.locator('.angler-guide').evaluateAll(guides => guides.every(g => g.scrollWidth <= g.clientWidth))).toBe(true);
-    expect(await page.locator('.schedule').evaluate(schedule => schedule.scrollHeight <= schedule.clientHeight)).toBe(true);
+    // Expanded reading may scroll inside the compact sidebar; every section and
+    // the final source must be reachable, not forced into an uncapped container.
+    const row = page.locator('#water-list > li');
+    for (const content of [row.locator('.planning-note'), row.locator('.source-list a').last()]) {
+      await content.scrollIntoViewIfNeeded();
+      expect(await content.evaluate(async el => {
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        const rect = el.getBoundingClientRect();
+        const clip = el.closest('.schedule').getBoundingClientRect();
+        // Native scrolling rounds scroll offsets to whole CSS pixels.
+        return rect.top >= Math.max(0, clip.top) - 1 && rect.bottom <= Math.min(innerHeight, clip.bottom) + 1;
+      })).toBe(true);
+    }
     await page.locator('#water-list summary').scrollIntoViewIfNeeded();
     await page.screenshot({path: `test-results/guide-${width}.png`, fullPage: true});
   });
