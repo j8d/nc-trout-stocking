@@ -1,0 +1,752 @@
+{
+  "version": 1,
+  "researched": "2026-10-23",
+  "entries": [
+    {
+      "id": "ashe-helton-creek",
+      "summary": "Helton Creek winds through an Ashe County landscape of hills and meadows. Older fishing accounts describe pocket water and deeper runs, although those descriptions predate current conditions.[18][27] For a first visit, a short session working pockets and runs with controlled nymph drifts is a reasonable starting approach. The main planning gap is access: this research did not establish a dedicated public parking area for the designated reach. Identify a lawful entrance before leaving home, and use the signed boundaries to stay within the delayed-harvest section.[36]",
+      "planningNote": "Confirm parking and permission for your intended approach. Older claims of easy roadside access should not be treated as permission to cross land; NCWRC warns that many western trout waters involve private property.[22]",
+      "sourceIds": [
+        18,
+        22,
+        27,
+        36
+      ]
+    },
+    {
+      "id": "ashe-trout-lake",
+      "summary": "Trout Lake is an option for anglers who prefer stillwater and shore fishing. NCWRC lists a public fishing area at 3220 Big Peak Creek Road in Laurel Springs, with bank access and a universally accessible fishing pier.[9] The entire impoundment is designated delayed harvest.[37] A small single-hook streamer fished slowly, or a suspended nymph with depth adjustments, would be reasonable approaches to try. Use the Ashe County address when navigating, since the lake name alone is easy to confuse with other destinations. Leave room for other bank and pier users when casting.",
+      "planningNote": "The agency lists bank and pier facilities; current hours and the pier's condition were not independently confirmed. Check before relying on the pier for mobility needs.",
+      "sourceIds": [
+        9,
+        37
+      ]
+    },
+    {
+      "id": "ashe-big-horse-creek",
+      "summary": "Big Horse Creek has a town-park setting in Lansing. NCWRC lists bank access at Lansing Greenway and a universally accessible pier at Lansing Park Public Fishing Area.[9] An April 2026 state article describes Creeper Trail Park following the creek, with a paved walking loop and bank fishing.[11] Recovery work complicates that picture: Lansing's October 2026 bid notice sought restoration of Helene-damaged banks in the park's lower loop.[34] This could suit a short fishing session combined with a park visit, once the town confirms which approaches are usable.",
+      "planningNote": "Ask Lansing Town Hall about lower-loop restoration and bank/pier access.[31] The bid notice establishes planned work, not a whole-park closure or completed recovery.[34]",
+      "sourceIds": [
+        9,
+        11,
+        31,
+        34
+      ]
+    },
+    {
+      "id": "ashe-south-fork-new-river",
+      "summary": "This South Fork New River entry covers the short reach around Todd Island.[36] NCWRC lists Todd Island Park Public Fishing Area at 1219 Todd Railroad Grade Road, with bank and canoe access.[9] The owner's May 2026 update says the parking lot had reopened for river access but the island remained closed while replacement of its footbridge was being planned.[8] Investigate an authorized mainland approach rather than making the island central to your outing. From the bank, short drifts along nearby current edges would be a sensible first fishing experiment.",
+      "planningNote": "Recheck with Todd Community Preservation Organization. The latest owner update retrieved was May 2026; it does not establish that the island or replacement bridge has since opened.[8]",
+      "sourceIds": [
+        8,
+        9,
+        36
+      ]
+    },
+    {
+      "id": "burke-jacob-fork",
+      "summary": "Jacob Fork is a South Mountains State Park option, with delayed-harvest water from Shinny Creek to the park's lower boundary.[36] NCWRC lists bank access and a universally accessible fishing pier.[9] The park's recovery page identifies the picnic area and nearby trout streams as open, while High Shoals Falls Trail and its viewing areas, Shinny, Headquarters and Possum trails remain closed.[12] A modest fishing plan near usable day-use facilities is more practical than a route depending on those closed trails. Check the pier's condition directly if accessible fishing is the reason for choosing this destination.",
+      "planningNote": "The park also reports Wards Gap Road construction beginning October 5, 2026, for several weeks, with a posted detour.[12] Confirm the road route and intended fishing approach with park staff.",
+      "sourceIds": [
+        9,
+        12,
+        36
+      ]
+    },
+    {
+      "id": "caldwell-wilson-creek",
+      "summary": "Wilson Creek lies in a Wild and Scenic River recreation area with forested ridges, whitewater and waterfall trails.[13] The delayed-harvest designation covers only the game-land portion below Lost Cove Creek to Phillips Branch.[36] NCWRC lists a Wilson Creek Public Fishing Area on Brown Mountain Beach Road with bank and canoe access, but that listing needs to be located against the reach boundaries before choosing a fishing spot.[9] For fishing, consider working a manageable stretch of softer current edges first. Do not assume descriptions of the broader Wilson Creek gorge describe this whole regulated section.",
+      "planningNote": "Confirm the intended road and bank approach with Grandfather Ranger District. The Forest Service recreation page says the restroom closes in winter and lists no potable water.[13]",
+      "sourceIds": [
+        9,
+        13,
+        36
+      ]
+    },
+    {
+      "id": "clay-fires-creek",
+      "summary": "Fires Creek is a forest outing with a useful boundary landmark: the footbridge at the USFS picnic area.[36] The Forest Service describes the wider area as remote, with fishing, hiking, horseback use and the Leatherwood Falls picnic area and short waterfall loop.[14] Delayed harvest extends upstream from the picnic-area bridge toward Rockhouse Creek; NCWRC lists the water below the bridge separately as hatchery supported.[10] A short-cast nymph approach is worth trying once you identify a usable bank entrance. The waterfall loop should not be assumed to provide continuous streamside fishing access.",
+      "planningNote": "The Forest Service lists sunrise-to-sunset day use and no potable water.[14] Bring drinking water and check the current footbridge and path conditions.",
+      "sourceIds": [
+        10,
+        14,
+        36
+      ]
+    },
+    {
+      "id": "graham-big-snowbird",
+      "summary": "Big Snowbird's delayed-harvest section runs between the USFS footbridge at the old railroad junction and USFS Road 2579.[36] The wider Snowbird Backcountry Area has waterfalls, a logging history and roadless Wilderness Study Area terrain.[15] That broader description is useful for the setting but does not establish the drive or walking route to this particular reach. Choose the fishing approach before adding a backcountry hike. The Forest Service's discussion of native brook trout above High Falls concerns different water and should not guide expectations for this stocked section.[15]",
+      "planningNote": "The backcountry page describes gravel-road travel and no potable water.[15] Reach-specific parking, bridge condition and the usable bank approach still need confirmation.",
+      "sourceIds": [
+        15,
+        36
+      ]
+    },
+    {
+      "id": "haywood-west-fork-pigeon-river",
+      "summary": "For the West Fork Pigeon, start planning with NCWRC's Cold Mountain and Cold Mountain (2) Public Fishing Areas along NC 215, both listed with bank access.[9] Match them to the Queen Creek-to-game-land-boundary designation; Lake Logan itself is outside this description.[36] Nearby Sunburst Campground is an old logging-camp site in Pisgah National Forest, with a spring-to-fall season and a picnic/day-use parking fee.[16] Those facilities may help with a broader trip, but their location does not establish that campground water is in the delayed-harvest reach. For a short outing, choose one confirmed fishing entrance and explore nearby current seams.",
+      "planningNote": "The lower boundary is the first game-land boundary upstream of Lake Logan.[36] Confirm the specific Cold Mountain approach and Sunburst's November availability if relying on campground facilities.",
+      "sourceIds": [
+        9,
+        16,
+        36
+      ]
+    },
+    {
+      "id": "henderson-north-fork-mills-river",
+      "summary": "North Mills River Picnic Area provides a developed starting point: the Forest Service lists parking, bathrooms, picnic space and an accessible fishing platform beside the campground.[17] Longer approaches deserve care. The Pisgah Conservancy describes North Mills River Trail as crossing the river repeatedly and reports a 2026 reroute and bridge repairs.[24] A short visit that avoids depending on fords is worth considering. There is also a firm planning date: Recreation.gov announces campground renovation closure from November 16, 2026, through August 15, 2027, with day-use upgrades among the work.[23]",
+      "planningNote": "Confirm river and day-use access during the renovation; the closure notice does not specify which fishing approaches will remain available.[23] The picnic-area listing includes day-use fees.[17]",
+      "sourceIds": [
+        17,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "jackson-tuckasegee-river",
+      "summary": "Jackson County's Tuckasegee entry is the Webster-Dillsboro reach, separate from Bryson City's delayed-harvest water.[36] Webster identifies a town river access used for fishing and kayaking, a named approach to investigate before choosing a bank.[33] Flow planning matters here: Duke Energy publishes release information and warns that operating changes can alter water levels and arrival or recession times without advance warning.[105] Check current information and observe the river on arrival. The downstream boundary is the signed falls 275 yards above the US 23-441 bridge, so the bridge itself is beyond this designated section.[36]",
+      "planningNote": "Check Duke's current flow information and the town access condition before travel.[105] No safe-wading threshold or release-arrival time was established by this research.",
+      "sourceIds": [
+        33,
+        36,
+        105
+      ]
+    },
+    {
+      "id": "macon-nantahala",
+      "summary": "This is the upper Nantahala along Wayah Road, above the hydropower discharge canal, rather than the lower gorge tailwater.[38][58] The Swain County Chamber describes a medium-size freestone river with pocket water and pools.[57] NCWRC lists Wishons Fishing Hole on Wayah Road with a fishing pier, whose current condition needs checking.[9] Short drifts through individual pockets would be a reasonable fishing approach. Duke Energy publishes a separate Cascades and Upper Nantahala bypass-release schedule and warns that high flows can create dangerous conditions in that reach.[106] Check upper-river releases as well as weather; the lower-river generation schedule alone is insufficient.",
+      "planningNote": "Check Duke's current upper-river bypass-release information separately from lower-river generation.[105][106] The 2026 recreation calendar does not establish November flows or safe fishing conditions. Verify Wishons access before travel.",
+      "sourceIds": [
+        9,
+        38,
+        57,
+        58,
+        105,
+        106
+      ]
+    },
+    {
+      "id": "madison-big-laurel-creek",
+      "summary": "Big Laurel's delayed-harvest entry is the reach between NC 208 and US 25-70.[59] Access research needs to stay focused there. Madison County tourism's longer Big Laurel Road fishing directions describe upstream water, while its Laurel River Trail description heads downstream from US 25-70 toward the French Broad, beyond this section.[50][51] Neither is a reliable substitute for an entrance inside the designated reach. If considering a Madison County trip, compare this with Shelton Laurel, whose own delayed-harvest section ends at Big Laurel Creek.[60] Identify the bridge boundaries and a permitted bank approach before committing to this destination.",
+      "planningNote": "No current primary-source parking or access-condition confirmation was found within this exact reach. Verify a lawful approach locally before travel.",
+      "sourceIds": [
+        50,
+        51,
+        59,
+        60
+      ]
+    },
+    {
+      "id": "madison-shelton-laurel-creek",
+      "summary": "Shelton Laurel's delayed-harvest water begins at the NC 208 bridge at Belva and ends at Big Laurel Creek; hatchery-supported water is listed separately upstream.[60][10] Madison County tourism describes the creek as relatively shallow and clear, although that is not a current depth or footing report.[39] A cautious starting approach would be to watch the near-bank water, keep initial casts short and adjust an artificial presentation to the current. The tourism page also notes a lack of waste receptacles, so bring a bag.[39] Its bait suggestions do not apply to a November delayed-harvest visit: natural bait may not be possessed while fishing.[1]",
+      "planningNote": "Confirm a permitted entrance below the Belva bridge. The tourism description mixes upstream and delayed-harvest water and does not verify a current legal pull-off within this reach.[39][60]",
+      "sourceIds": [
+        1,
+        10,
+        39,
+        60
+      ]
+    },
+    {
+      "id": "madison-spring-creek",
+      "summary": "Spring Creek's delayed-harvest water is the Hot Springs town reach between NC 209 and the iron bridge at the end of Andrews Avenue.[61] NCWRC's Mountain Heritage map describes 1.7 miles and marks those bridge landmarks; its access inventory lists a Town of Hot Springs bank-fishing site.[52][9] This is worth investigating for a town-based session, particularly if a backcountry approach is not what you want. Start with the bridge-to-bridge map, then ask the town which bank approach is currently usable. The mapped designation does not grant permission across adjoining property.[22]",
+      "planningNote": "Check bank access and storm-related restrictions with the Town of Hot Springs. Parking shown on the Mountain Heritage map is not confirmation of present availability.[52]",
+      "sourceIds": [
+        9,
+        22,
+        52,
+        61
+      ]
+    },
+    {
+      "id": "mcdowell-curtis-creek",
+      "summary": "Curtis Creek's delayed-harvest designation covers the game-land portion below the Forest Service boundary at Deep Branch.[62] NCWRC lists a public fishing area with bank access and a fishing pier.[9] The road approach remains an unresolved part of planning: a Forest Service area page updated September 30, 2025, reports a vehicle closure below the campground and storm damage there.[40] A newer campground page does not explicitly resolve the closure.[41] Confirm the drivable route before choosing this destination, and ask whether reaching the fishing area requires a permitted walk. Do not assume the entire campground-road corridor shares the delayed-harvest designation.",
+      "planningNote": "Call Grandfather Ranger District at (828) 652-2144 about the road and fishing-area approach.[40] The 2025 notice is dated evidence, not confirmation of an October or November 2026 closure.",
+      "sourceIds": [
+        9,
+        40,
+        41,
+        62
+      ]
+    },
+    {
+      "id": "mcdowell-mill-creek",
+      "summary": "Mill Creek is Old Fort's compact town fishery between US 70 and I-40.[63] NCWRC describes a 0.7-mile Mountain Heritage delayed-harvest section and lists bank access at Mountain Gateway Museum Public Fishing Area, 102 Water Street.[42][9] The museum is an important navigation reference, but its operating location and original creekside grounds need to be distinguished. A December 2024 state announcement described a temporary move to Catawba Avenue while the original museum and grounds were repaired after Helene.[70] Confirm the Water Street fishing approach before planning a short bridge-to-bridge session; the historical announcement does not settle its current condition.",
+      "planningNote": "Ask specifically about fishing access and parking at the original Water Street grounds, not simply museum opening hours at another location. Current creekside access was not confirmed.",
+      "sourceIds": [
+        9,
+        42,
+        63,
+        70
+      ]
+    },
+    {
+      "id": "mcdowell-catawba-river",
+      "summary": "This Catawba River entry follows Marion's greenway corridor.[64] The city describes the Joseph McDowell Historical Catawba Greenway's first phase as a mile beside the river, from US 70 West off Sam Philips Drive toward the US 221 Bypass, with a fishing pier, observation platform and picnic area. A later extension adds 0.7 miles toward the McDowell House.[43] That layout could suit a walk-and-fish visit, once present facilities are confirmed. Use the greenway to scout a permitted approach and check delayed-harvest signs; the designation applies to the portion adjacent to Marion Greenway, not the entire river.[64]",
+      "planningNote": "Confirm greenway, pier and bank-access conditions with the City of Marion. The city facility description is not a fresh post-Helene inspection.[43]",
+      "sourceIds": [
+        43,
+        64
+      ]
+    },
+    {
+      "id": "mitchell-cane-creek",
+      "summary": "Cane Creek is Bakersville's town fishery in Mitchell County.[65] NCWRC's Mountain Heritage brochure describes a half-mile delayed-harvest section, with current official boundaries at the NC 226 and SR 1189 bridges.[45][65] Creek Walk recovery is the trip-planning issue: the town says the park and walk are under reconstruction after Helene, while the pavilion and restrooms have been repaired for spring-through-fall use.[44] Repaired amenities do not establish that the whole walk or fishing bank is available. Ask which fishing approaches are permitted around the work before treating this as a convenient short town outing.",
+      "planningNote": "Contact Bakersville Town Hall at (828) 688-2113. The town reports reconstruction, and county tourism labels the Creekwalk closed for repairs; specific usable fishing access remains unresolved.[44][72]",
+      "sourceIds": [
+        44,
+        45,
+        65,
+        72
+      ]
+    },
+    {
+      "id": "mitchell-north-toe-river",
+      "summary": "The North Toe entry is Spruce Pine's bridge-to-bridge reach, from US 19E to NC 226.[66] NCWRC's Mountain Heritage brochure describes two miles of delayed-harvest water and marks Riverside Park; its access inventory lists the park with a pier, bank and canoe access.[46][9] County tourism also identifies fishing access there.[72] Those listings provide a place to investigate, not proof of today's condition. Confirm the park's usable approach with the town before traveling, then choose a manageable part of the reach. Observe the current from shore before deciding how to fish it.",
+      "planningNote": "Riverside Park's current bank and pier condition was not verified; the town parks page could not be retrieved. The November stocking listing does not establish that every access has reopened.[2]",
+      "sourceIds": [
+        2,
+        9,
+        46,
+        66,
+        72
+      ]
+    },
+    {
+      "id": "polk-green-river",
+      "summary": "Green River requires extra road and access planning. Its delayed-harvest reach runs from Fishtop Falls Access Area to Cove Creek.[67] NCDOT's July 1, 2026 notice put permanent Green River Cove Road repairs first on the riverside stretch between Fishtop and Silver Creek Road, with possible lane closures and the overall project extending into early 2029.[54] NCWRC had also warned in March 2025 about heavily impacted Green River sections and changed underwater conditions.[49] Verify the road route and Fishtop bank approach before departure, keep an alternative destination in mind, and do not rely on pre-Helene knowledge of the channel.",
+      "planningNote": "NCDOT described access via Silver Creek Road from Mill Spring in July 2026.[54] Check current restrictions rather than treating that dated route or a stocking date as confirmation of restored access.",
+      "sourceIds": [
+        49,
+        54,
+        67
+      ]
+    },
+    {
+      "id": "surry-ararat-river",
+      "summary": "Ararat River's delayed-harvest water follows the Mount Airy greenway downstream of NC 103; the greenway water upstream is separately listed as hatchery supported.[68][10] The city describes an Ararat greenway segment between Riverside and Tharrington parks, and NCWRC lists bank access at Riverside Park, Tharrington School Park and H.B. Rowe Environmental Park.[47][9] These named entrances are useful for planning a walk-and-fish session, but match the chosen site to the downstream regulation boundary. Leave casting room for walkers and cyclists. The wider city greenway network should not be mistaken for the length of delayed-harvest trout water.[47][68]",
+      "planningNote": "Use the city greenway map and posted fishing signs together. Confirm the specific bank approach; the facilities directory is not a current condition or safe-wading report.[47][9]",
+      "sourceIds": [
+        9,
+        10,
+        47,
+        68
+      ]
+    },
+    {
+      "id": "surry-mitchell-river",
+      "summary": "The Mitchell River is a River Road destination near Kapps Mill in Surry County.[73] NCWRC lists Upper, Middle and Lower Parking Area public fishing sites, each with bank access.[9] Those three named facilities make useful starting points for comparing approaches to the designated reach. For a first visit, choose one established access and work a manageable stretch after checking the water and posted boundaries. The agency cautions that conditions and accessibility can change and recommends contacting the site sponsor.[9] Stay within designated parking, and do not assume all banks between the access areas are public.",
+      "planningNote": "Look up the named Upper, Middle or Lower public fishing area before driving; the map's water marker is not a parking pin. Current road and bank conditions were not independently confirmed.",
+      "sourceIds": [
+        9,
+        73
+      ]
+    },
+    {
+      "id": "swain-tuckasegee-river",
+      "summary": "Bryson City's Tuckasegee is a separate 2.2-mile delayed-harvest reach between the US 19 and Slope Street bridges.[74] Island Park is a town-based planning reference. Swain County tourism describes its footbridge entrance at Ramseur and Bryson streets, wooded dirt paths and picnic tables, plus a fishing pier outside the park on Island Street.[75] The page also identifies midstream rapids around the island.[75] Scout from land and avoid making a river crossing part of the plan. Check current park, pier and river conditions before choosing an approach; a downtown location does not establish easy wading.",
+      "planningNote": "Confirm the current footbridge and Island Street pier condition. The tourism listing supplies planning landmarks, not a current opening report or permission to use every adjoining bank.[75]",
+      "sourceIds": [
+        74,
+        75
+      ]
+    },
+    {
+      "id": "transylvania-east-fork-french-broad-river",
+      "summary": "The East Fork follows a roadside setting near Rosman, where access requires respect for private land. Headwaters Outfitters describes the East Fork Road fishery and warns that adjoining land is private and posted signs must be respected.[76] A 2017 fishing account describes valley farms and fields, slower runs, bend pools, riffles and cascades; these are historical descriptions, not a post-storm survey.[77] Choose a short, legally accessible piece and adapt your presentation to the water you find. Use NCWRC's current church-to-below-Whitmire-Falls boundaries rather than endpoints in older fishing articles.[96]",
+      "planningNote": "Confirm permitted entry and parking locally. A delayed-harvest designation does not grant permission to cross a yard, field or posted parcel.[76][22]",
+      "sourceIds": [
+        22,
+        76,
+        77,
+        96
+      ]
+    },
+    {
+      "id": "transylvania-little-river",
+      "summary": "Little River's delayed-harvest water lies in DuPont State Recreational Forest, between the Lake Dense confluence and 100 yards below Hooker Falls.[78][94] Friends of DuPont identifies the Hooker Falls Access Area on Staton Road beside the road bridge, a place to start checking an approach.[79] Waterfall restrictions matter: the Forest Service prohibits wading within 300 feet of the top of waterfalls and says not to climb on rocks or waterfalls.[78] Plan to fish ordinary river water away from restricted areas. The agency also recommends blaze orange during hunting seasons.[78]",
+      "planningNote": "Check forest and trail notices before travel. Observe signed exclusions and the 300-foot upstream waterfall wading prohibition; the fishing designation does not override those restrictions.[78]",
+      "sourceIds": [
+        78,
+        79,
+        94
+      ]
+    },
+    {
+      "id": "watauga-watauga-river",
+      "summary": "Watauga River has two separate delayed-harvest reaches: the Valle Crucis park section and the SR 1103-to-Laurel Creek section.[95] Valle Crucis Community Park describes shallow, slower river water along its northern boundary and warns that precipitation affects flow.[80][81] The park could suit a fishing visit shared with walking companions, provided current access is confirmed. Keep casts clear of other visitors; the operator welcomes children playing in the water and asks visitors not to move river rocks.[80] Those descriptions apply to the park, not the separate Laurel Creek reach, which needs its own access plan.",
+      "planningNote": "The schedule gives one stocking date for Watauga River without allocating fish between the two reaches.[7][95] Confirm access to your chosen section separately; shallow-water descriptions are not a wading-safety guarantee.",
+      "sourceIds": [
+        7,
+        80,
+        81,
+        95
+      ]
+    },
+    {
+      "id": "watauga-lake-coffey",
+      "summary": "Lake Coffey is Beech Mountain's small lake off Lakeledge Road. The town visitor center describes a neighborhood park with a quarter-mile walking track and basketball; NCWRC lists pier and bank fishing access.[82][9] It is worth considering for a stillwater outing, but its operating status needs a direct check. The visitor center's lake page says it is open, while its general fishing page still says it is closed for repairs.[82][83] Neither notice is treated here as a settled current status. If access is confirmed, leave casting space for people using the walking track.",
+      "planningNote": "Contact Buckeye Recreation Center to resolve the conflicting lake notices. The lake page also lists both adjoining Pond Creek trails as closed, so do not assume they can be added to the outing.[82][83]",
+      "sourceIds": [
+        9,
+        82,
+        83
+      ]
+    },
+    {
+      "id": "wilkes-east-prong-roaring-river",
+      "summary": "The East Prong Roaring River is a Stone Mountain State Park option with a documented alternative to wading: NCWRC lists the Lower Pier Public Fishing Area on Stone Mountain Road as a universally accessible fishing pier.[9] Confirm its condition and approach if mobility needs are shaping the trip. The park has picnic shelters and a visitor center, useful for companions planning a park day around the fishing.[84] Keep this designated reach below Bullhead Creek distinct from adjoining streams.[98] Fishing is limited to regular park hours, and current construction affects some trails.[84]",
+      "planningNote": "Check lower-pier access and current trail closures with the park. Do not assume a full waterfall-loop hike is available when combining fishing with a walk.[84]",
+      "sourceIds": [
+        9,
+        84,
+        98
+      ]
+    },
+    {
+      "id": "wilkes-stone-mountain-creek",
+      "summary": "Stone Mountain Creek is the park's waterfall-linked delayed-harvest option, extending from the falls at the Alleghany County line to its meeting with East Prong Roaring River and Bullhead Creek.[99] NCWRC lists bank access and a tackle-loaner program, whose availability should be checked.[9] The park also has picnic shelters and a visitor center.[84] Choose a modest fishing objective and confirm a legal walking route: the posted waterfall-area loop closure and limited upper-trailhead parking may affect an approach.[86] Those restrictions do not by themselves establish that all creek fishing is closed.",
+      "planningNote": "Ask park staff how to reach the intended creek section without entering the closed waterfall/loop work area. Current route and parking availability were not independently confirmed.[86]",
+      "sourceIds": [
+        9,
+        84,
+        86,
+        99
+      ]
+    },
+    {
+      "id": "wilkes-reddies-river",
+      "summary": "Reddies River's delayed-harvest water runs through North Wilkesboro below the town water-intake dam to the Yadkin confluence.[100] NCWRC recognizes the Mountain Heritage Trout Water and lists a bank-fishing site.[88][9] The Yadkin River Greenway Council describes its orange Historic Jefferson Turnpike section as a 1.33-mile walk along the Reddies, useful for scouting where permitted or for a non-fishing companion.[87] Use an established fishing approach rather than assuming every path-side bank is an entrance. The greenway uses color-coded sections for emergency reporting; note your section before walking away from the trailhead.[87]",
+      "planningNote": "Check greenway notices and the listed bank access before choosing an entrance. The greenway's separate Yadkin fishing pier should not be mistaken for a Reddies River facility.",
+      "sourceIds": [
+        9,
+        87,
+        88,
+        100
+      ]
+    },
+    {
+      "id": "wilkes-elk-creek",
+      "summary": "Elk Creek has two designated portions: from the Watauga County line to the lower Blue Ridge Mountain Club boundary, and a separate portion on Leatherwood Mountains Development.[101] NCWRC lists bank-fishing access at both developments, but that does not make their wider grounds public.[9] Leatherwood's angler map identifies designated gravel parking and limits anglers to the creek or its banks; non-fishing access is restricted for visitors other than rental guests.[104] Choose one site and confirm its current arrangements before travel. Do not plan on following the creek between developments or treating resort ponds and guest amenities as part of this fishery.",
+      "planningNote": "Follow Leatherwood's current angler-access rules and ask separately about Blue Ridge Mountain Club.[104] The stocking schedule does not allocate fish between the two designated portions.[7]",
+      "sourceIds": [
+        7,
+        9,
+        101,
+        104
+      ]
+    },
+    {
+      "id": "yancey-cane-river",
+      "summary": "Cane River's delayed-harvest section ends at the downstream boundary of Cane River County Park.[103] The park is a boundary reference, but it should not be assumed to be an available fishing entrance: NCWRC lists Cane River Park as closed until further notice because of hurricane damage and directs visitors to Yancey County Parks and Recreation.[55] Seek a current access update before committing to the drive. If you cannot establish an authorized entrance, choose another destination. A November stocking date does not establish park reopening, and a closure should not be bypassed across adjoining land.",
+      "planningNote": "Do not plan to enter through Cane River Park while the listed closure remains. Contact Yancey County Parks and Recreation for the current determination; its department page provides contact information.[55][92]",
+      "sourceIds": [
+        55,
+        92,
+        103
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "NC Wildlife: trout classifications and delayed-harvest rules",
+      "url": "https://www.ncwildlife.gov/fishing/trout-fishing-north-carolina"
+    },
+    {
+      "id": 2,
+      "title": "NC Wildlife October 22, 2026: delayed-harvest fall stocking schedule",
+      "url": "https://www.ncwildlife.gov/news/press-releases/2026/10/22/wildlife-agency-posts-delayed-harvest-fall-2026-mountain-trout-stocking-schedule"
+    },
+    {
+      "id": 7,
+      "title": "November 2026 Delayed Harvest Schedule | NC Wildlife",
+      "url": "https://www.ncwildlife.gov/delayed-harvest-schedule"
+    },
+    {
+      "id": 8,
+      "title": "2026 TCPO Spring News | Todd Community Preservation Organization",
+      "url": "https://toddnc.org/support/2025-tcpo-spring-news"
+    },
+    {
+      "id": 9,
+      "title": "Fishing Access",
+      "url": "https://www.ncpaws.org/RsReports/IMAP/FishingAreasPDF.aspx?BoatRamp=0&CFP=0&CanoeAccess=0&FishingPier=0&ShorelineAccess=0&SpeciesGroupID=11&TLP=0&Universal=0"
+    },
+    {
+      "id": 10,
+      "title": "Public Mountain Trout Waters",
+      "url": "https://www.ncpaws.org/PMTWS/SearchExport.ashx"
+    },
+    {
+      "id": 11,
+      "title": "Day Trip Itinerary: Let loose in Lansing | NC DNCR",
+      "url": "https://www.dncr.nc.gov/blog/2026/04/21/day-trip-itinerary-let-loose-lansing"
+    },
+    {
+      "id": 12,
+      "title": "Helene Recovery at South Mountains State Park | NC State Parks",
+      "url": "https://www.ncparks.gov/state-parks/south-mountains-state-park/news/reopened-facilities-after-helene"
+    },
+    {
+      "id": 13,
+      "title": "National Forests in North Carolina | Wilson Creek Wild and Scenic River Area | Forest Service",
+      "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/wilson-creek-wild-and-scenic-river-area"
+    },
+    {
+      "id": 14,
+      "title": "National Forests in North Carolina | Fires Creek Recreation Area | Forest Service",
+      "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/fires-creek-recreation-area"
+    },
+    {
+      "id": 15,
+      "title": "National Forests in North Carolina | Snowbird Backcountry Area | Forest Service",
+      "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/snowbird-backcountry-area"
+    },
+    {
+      "id": 16,
+      "title": "National Forests in North Carolina | Sunburst Campground | Forest Service",
+      "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/sunburst-campground"
+    },
+    {
+      "id": 17,
+      "title": "National Forests in North Carolina | North Mills River Picnic Area | Forest Service",
+      "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/north-mills-river-picnic-area"
+    },
+    {
+      "id": 18,
+      "title": "Fly Fishing in North Carolina | Our State",
+      "url": "https://www.ourstate.com/fly-fishing-in-north-carolina"
+    },
+    {
+      "id": 22,
+      "title": "Where to Fish | NC Wildlife",
+      "url": "https://www.ncwildlife.gov/fishing/where-fish"
+    },
+    {
+      "id": 23,
+      "title": "North Mills River, National Forests in North Carolina - Recreation.gov",
+      "url": "https://www.recreation.gov/camping/campgrounds/232380"
+    },
+    {
+      "id": 24,
+      "title": "North Mills River Trail Reroute & Improvements – The Pisgah Conservancy",
+      "url": "https://pisgahconservancy.org/success-stories/north-mills-river-trail-reroute-and-improvements"
+    },
+    {
+      "id": 27,
+      "title": "Hidden Helton",
+      "url": "https://www.carolinasportsman.com/content/hidden-helton"
+    },
+    {
+      "id": 31,
+      "title": "Town of Lansing",
+      "url": "https://www.lansingnc.us/creeper-trail-park"
+    },
+    {
+      "id": 33,
+      "title": "recreation — Historic Webster, NC",
+      "url": "https://townofwebster.org/recreation"
+    },
+    {
+      "id": 34,
+      "title": "ADVERTISEMENT FOR BID This supersedes",
+      "url": "https://www.ashepostandtimes.com/classifieds/community/public_notices/advertisement-for-bid-this-supersedes/ad_9a90d092-8d50-54ee-9c0f-c11f7d063846.html"
+    },
+    {
+      "id": 36,
+      "title": "NCWRC 2026–27 delayed-harvest streams official attributes",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=json&where=Excel_ID%20IN%20%2824,23,25,90,103,129,137,159,172,187%29&outFields=*&returnGeometry=false"
+    },
+    {
+      "id": 37,
+      "title": "NCWRC 2026–27 delayed-harvest impoundments official attributes",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0/query?f=json&where=Excel_ID%20IN%20%2826%29&outFields=*&returnGeometry=false"
+    },
+    {
+      "id": 38,
+      "title": "NC Trout Fishing - Upper Nantahala River & Gorge - Fishing Guides & Licenses",
+      "url": "https://visitnantahalanc.com/river.html"
+    },
+    {
+      "id": 39,
+      "title": "Shelton Laurel Creek | Fly-fishing in Madison County",
+      "url": "https://visitmadisoncounty.com/shelton-laurel-creek"
+    },
+    {
+      "id": 40,
+      "title": "National Forests in North Carolina | Curtis Creek Area | Forest Service",
+      "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/curtis-creek-area"
+    },
+    {
+      "id": 41,
+      "title": "National Forests in North Carolina | Curtis Creek Campground | Forest Service",
+      "url": "https://www.fs.usda.gov/r08/northcarolina/recreation/curtis-creek-campground"
+    },
+    {
+      "id": 42,
+      "title": "Old Fort Mountain Heritage Trout Water",
+      "url": "https://www.ncwildlife.gov/media/585/download?attachment="
+    },
+    {
+      "id": 43,
+      "title": "Facilities • Joseph McDowell Historical Catawba Greenway",
+      "url": "https://www.marionnc.org/Facilities/Facility/Details/Joseph-McDowell-Historical-Catawba-Green-11"
+    },
+    {
+      "id": 44,
+      "title": "Creekwalk | Town of Bakersville",
+      "url": "https://www.bakersvillenc.com/creekwalk.html"
+    },
+    {
+      "id": 45,
+      "title": "Bakersville Mountain Heritage Trout Water",
+      "url": "https://www.ncwildlife.gov/media/593/download?attachment="
+    },
+    {
+      "id": 46,
+      "title": "Spruce Pine Mountain Heritage Trout Water",
+      "url": "https://www.ncwildlife.gov/media/584/download?attachment="
+    },
+    {
+      "id": 47,
+      "title": "Facilities • Granite City Greenway System",
+      "url": "https://www.mountairy.org/facilities/facility/details/Granite-City-Greenway-System-14"
+    },
+    {
+      "id": 49,
+      "title": "Some Waterways Remain Dangerous for Recreational Activities Post-Helene | NC Wildlife",
+      "url": "https://www.ncwildlife.gov/news/press-releases/2025/03/26/some-waterways-remain-dangerous-recreational-activities-post-helene"
+    },
+    {
+      "id": 50,
+      "title": "Big Laurel Creek | Fly-fishing paradise near Asheville",
+      "url": "https://visitmadisoncounty.com/big-laurel-creek-2"
+    },
+    {
+      "id": 51,
+      "title": "Laurel River | Enjoy amazing fly-fishing near Asheville",
+      "url": "https://visitmadisoncounty.com/laurel-river"
+    },
+    {
+      "id": 52,
+      "title": "Hot Springs Mountain Heritage Trout Water",
+      "url": "https://www.ncwildlife.gov/media/587/download?attachment="
+    },
+    {
+      "id": 54,
+      "title": "Permanent Helene Repairs Begin on Green River Cove Road | NCDOT",
+      "url": "https://www.ncdot.gov/news/press-releases/Pages/2026/2026-07-01-helene-repairs-green-river-cove.aspx"
+    },
+    {
+      "id": 55,
+      "title": "Public Fishing Area Full and Partial Closings | NC Wildlife",
+      "url": "https://www.ncwildlife.gov/connect/ncwrc-operations-closings-and-alerts/public-fishing-area-full-and-partial-closings"
+    },
+    {
+      "id": 57,
+      "title": "Nantahala Cascades - Top 100 Trout River - Delayed Harvest Stocked River Near Bryson City NC",
+      "url": "https://greatsmokiesfishing.com/nantahala-upper.html"
+    },
+    {
+      "id": 58,
+      "title": "NCWRC 2026–2027 designated reach: Macon Nantahala",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28215%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 59,
+      "title": "NCWRC 2026–2027 designated reach: Madison Big Laurel Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28235%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 60,
+      "title": "NCWRC 2026–2027 designated reach: Madison Shelton Laurel Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28236%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 61,
+      "title": "NCWRC 2026–2027 designated reach: Madison Spring Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28237%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 62,
+      "title": "NCWRC 2026–2027 designated reach: McDowell Curtis Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28259%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 63,
+      "title": "NCWRC 2026–2027 designated reach: McDowell Mill Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28260%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 64,
+      "title": "NCWRC 2026–2027 designated reach: McDowell Catawba River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28258%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 65,
+      "title": "NCWRC 2026–2027 designated reach: Mitchell Cane Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28270%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 66,
+      "title": "NCWRC 2026–2027 designated reach: Mitchell North Toe River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28271%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 67,
+      "title": "NCWRC 2026–2027 designated reach: Polk Green River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28286%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 68,
+      "title": "NCWRC 2026–2027 designated reach: Surry Ararat River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28303%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 70,
+      "title": "Mountain Gateway Museum Opens Temporary Location | NC DNCR",
+      "url": "https://www.dncr.nc.gov/news/press-releases/2024/12/19/mountain-gateway-museum-opens-temporary-location"
+    },
+    {
+      "id": 72,
+      "title": "Paved Trails | Discover Mitchell NC",
+      "url": "https://www.discovermitchellnc.com/pavedtrails"
+    },
+    {
+      "id": 73,
+      "title": "Yadkin Valley tourism: Mitchell River delayed harvest",
+      "url": "https://www.yadkinvalleync.com/attractions/delayed-harvest-trout-fishing-mitchell-river"
+    },
+    {
+      "id": 74,
+      "title": "NCWRC Bryson City Mountain Heritage Trout Water",
+      "url": "https://www.ncwildlife.gov/media/590/download?attachment="
+    },
+    {
+      "id": 75,
+      "title": "Swain County tourism: Bryson City Island Park",
+      "url": "https://www.greatsmokies.com/bc-island-park"
+    },
+    {
+      "id": 76,
+      "title": "Headwaters Outfitters: Public Fishing Waters",
+      "url": "https://headwatersoutfitters.com/public-fishing-waters"
+    },
+    {
+      "id": 77,
+      "title": "Coastal Angler: Delayed Harvest on the East Fork (2017)",
+      "url": "https://coastalanglermag.com/delayed-harvest-east-fork-french-broad"
+    },
+    {
+      "id": 78,
+      "title": "NC Forest Service: Hunting and Fishing at DuPont",
+      "url": "https://www.ncagr.gov/divisions/nc-forest-service/state-forests/dupont-state-recreational-forest/explore-the-forest/hunting-fishing"
+    },
+    {
+      "id": 79,
+      "title": "Friends of DuPont Forest: Hooker Falls access",
+      "url": "https://www.dupontforest.com/access-parking/hooker-falls"
+    },
+    {
+      "id": 80,
+      "title": "Valle Crucis Community Park: Amenities",
+      "url": "https://vallecrucispark.org/amenities"
+    },
+    {
+      "id": 81,
+      "title": "Valle Crucis Community Park: Watauga River",
+      "url": "https://vallecrucispark.org/about/watauga-river"
+    },
+    {
+      "id": 82,
+      "title": "Beech Mountain Visitor Center: Lake Coffey",
+      "url": "https://beechmtn.com/visit/lake-coffey"
+    },
+    {
+      "id": 83,
+      "title": "Beech Mountain Visitor Center: Fishing",
+      "url": "https://beechmtn.com/visit/fishing"
+    },
+    {
+      "id": 84,
+      "title": "NC State Parks: Stone Mountain State Park",
+      "url": "https://www.ncparks.gov/state-parks/stone-mountain-state-park"
+    },
+    {
+      "id": 86,
+      "title": "NC State Parks: Stone Mountain trails",
+      "url": "https://www.ncparks.gov/state-parks/stone-mountain-state-park/trails"
+    },
+    {
+      "id": 87,
+      "title": "Yadkin River Greenway Council: Sections",
+      "url": "https://www.yadkinrivergreenway.com/sections"
+    },
+    {
+      "id": 88,
+      "title": "NCWRC Wilkesboro and North Wilkesboro Mountain Heritage Trout Water",
+      "url": "https://www.ncwildlife.gov/media/596/download?attachment="
+    },
+    {
+      "id": 92,
+      "title": "Yancey County: Parks and Recreation",
+      "url": "https://www.yanceycountync.gov/161/Parks-Recreation"
+    },
+    {
+      "id": 94,
+      "title": "NCWRC 2026 GIS: Transylvania — Little River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28326%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 95,
+      "title": "NCWRC 2026 GIS: Watauga — Watauga River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28345%2C518%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 96,
+      "title": "NCWRC 2026 GIS: Transylvania — East Fork French Broad River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28325%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 98,
+      "title": "NCWRC 2026 GIS: Wilkes — East Prong Roaring River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28374%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 99,
+      "title": "NCWRC 2026 GIS: Wilkes — Stone Mountain Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28377%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 100,
+      "title": "NCWRC 2026 GIS: Wilkes — Reddies River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28411%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 101,
+      "title": "NCWRC 2026 GIS: Wilkes — Elk Creek",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28375%2C376%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 103,
+      "title": "NCWRC 2026 GIS: Yancey — Cane River",
+      "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=Excel_ID+IN+%28419%29&outFields=%2A&outSR=4326&returnGeometry=true"
+    },
+    {
+      "id": 104,
+      "title": "Leatherwood Mountains: Elk Creek angler access map and restrictions",
+      "url": "https://leatherwoodmountains.com/wp-content/uploads/2022/08/Angler-Map.pdf"
+    },
+    {
+      "id": 105,
+      "title": "Duke Energy: scheduled flow releases, Nantahala/Tuckasegee area",
+      "url": "https://lakes.hydro-derived.duke-energy.app/flowreleases/2"
+    },
+    {
+      "id": 106,
+      "title": "Duke Energy: 2026 Cascades and Upper Nantahala bypass-release schedule",
+      "url": "https://lakes.hydro-derived.duke-energy.app/recreation_calendar/location_id=2/20260914_232229_789d02ba.pdf"
+    }
+  ]
+}

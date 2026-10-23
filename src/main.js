@@ -3,6 +3,8 @@ import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "./style.css";
+import { validateGuide } from "./guide-model.js";
+import { renderGuide, renderGuideDisclosure } from "./guide-view.js";
 import {
   filterWaters,
   sortWaters,
@@ -50,6 +52,9 @@ markerGroup.on("clusterclick", (event) =>
   event.layer.zoomToBounds({ padding: [40, 40] }),
 );
 let waters = [],
+  guide,
+  guideEntries,
+  guideSources,
   sections,
   visible = [],
   selected = "";
@@ -222,6 +227,7 @@ function selectWater(id, zoom = true) {
       "Representative location on the mapped water. Not an exact release point, parking location, or guarantee of public access.",
     ),
     links,
+    renderGuide(guideEntries.get(id), guideSources, water, guide.researched),
   );
   if (water.scopeNote)
     detail.append(node("p", "location-note", water.scopeNote));
@@ -262,6 +268,7 @@ function renderList() {
   const fragment = document.createDocumentFragment();
   for (const water of visible) {
     const li = node("li");
+    li.dataset.waterId = water.id;
     const button = node("button", "water-button");
     button.type = "button";
     button.dataset.id = water.id;
@@ -293,7 +300,7 @@ function renderList() {
       if (matchMedia("(max-width: 767px)").matches)
         $("#detail").scrollIntoView({ block: "center", behavior: "instant" });
     });
-    li.append(button);
+    li.append(button, renderGuideDisclosure(guideEntries.get(water.id), guideSources, water, guide.researched, dateLabel(water.date)));
     fragment.append(li);
   }
   $("#water-list").replaceChildren(fragment);
@@ -382,17 +389,20 @@ function resetFilters() {
 async function start() {
   try {
     const responses = await Promise.all(
-      ["waters.json", "sections.geojson"].map((path) =>
+      ["waters.json", "sections.geojson", "angler-guide.json"].map((path) =>
         fetch(`${base}data/${path}`),
       ),
     );
     if (responses.some((response) => !response.ok))
       throw new Error("Local map data is unavailable");
-    [waters, sections] = await Promise.all(
+    [waters, sections, guide] = await Promise.all(
       responses.map((response) => response.json()),
     );
     if (waters.length !== 33 || !sections.features?.length)
       throw new Error("Incomplete map data");
+    validateGuide(guide, waters);
+    guideEntries = new Map(guide.entries.map(entry => [entry.id, entry]));
+    guideSources = new Map(guide.sources.map(source => [source.id, source]));
     const counties = [...new Set(waters.map((w) => w.county))].sort();
     const dates = [...new Set(waters.map((w) => w.date))].sort();
     $(".edition span").textContent =
