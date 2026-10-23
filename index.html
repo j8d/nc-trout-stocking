@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore all 33 North Carolina delayed-harvest trout waters and their November 2026 stocking dates. Interactive map, county filters and a searchable schedule."
+    />
+    <meta name="theme-color" content="#193f38" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>NC Trout Stocking Map · November 2026</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#waters">Skip to stocking schedule</a>
+    <header class="masthead">
+      <div class="brand">
+        <svg aria-hidden="true" viewBox="0 0 48 48">
+          <path d="M4 30 16 11l9 13 6-8 13 20M10 36q8-8 16 0t17 0" />
+        </svg>
+        <div>
+          <p class="eyebrow">North Carolina · Delayed harvest</p>
+          <h1>Trout stocking map</h1>
+        </div>
+      </div>
+      <div class="edition">
+        <strong>November 2026</strong><span>33 waters · 19 counties</span>
+      </div>
+    </header>
+    <main>
+      <section class="intro" aria-label="About this map">
+        <p>
+          Find your next stretch of water.<br class="mobile-break" />
+          <span>Explore the scheduled November trout releases.</span>
+        </p>
+        <a
+          href="https://www.ncwildlife.gov/delayed-harvest-schedule"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Official schedule ↗</a
+        >
+      </section>
+      <form
+        id="filters"
+        class="filters"
+        role="search"
+        aria-label="Filter stocking waters"
+      >
+        <div class="search-field">
+          <label for="query">Search waters or counties</label
+          ><input
+            id="query"
+            type="search"
+            placeholder="Try Helton Creek or Ashe"
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <label for="county">County</label
+          ><select id="county">
+            <option value="">All counties</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Stocking date</label
+          ><select id="date">
+            <option value="">All dates</option>
+          </select>
+        </div>
+        <button id="reset" class="secondary" type="button">
+          Reset filters
+        </button>
+      </form>
+      <div class="explorer">
+        <section
+          class="schedule"
+          id="waters"
+          tabindex="-1"
+          aria-labelledby="schedule-heading"
+        >
+          <div class="section-heading">
+            <h2 id="schedule-heading">Stocking schedule</h2>
+            <span id="count" role="status" aria-live="polite"
+              >Loading waters…</span
+            >
+          </div>
+          <p class="list-hint">
+            Sorted by date. Select a water to explore its section. Scroll for
+            all results.
+          </p>
+          <ol id="water-list" aria-label="Waters and stocking dates"></ol>
+          <div id="empty" hidden>
+            <h3>No matching waters</h3>
+            <p>Try a different search or clear your county and date filters.</p>
+            <button type="button" id="empty-reset" class="secondary">
+              Show all 33 waters
+            </button>
+          </div>
+        </section>
+        <section class="map-panel" aria-labelledby="map-heading">
+          <div class="map-heading">
+            <div>
+              <h2 id="map-heading">Explore the waters</h2>
+              <p>
+                Lines show designated sections. Date pins are representative
+                locations, not release or access points.
+              </p>
+            </div>
+            <button type="button" class="secondary" id="fit">
+              Fit results
+            </button>
+          </div>
+          <div
+            id="map"
+            role="region"
+            aria-label="Interactive map of North Carolina delayed-harvest trout waters"
+            tabindex="0"
+          ></div>
+          <p id="tile-warning" class="map-warning" role="status" hidden>
+            Some basemap tiles could not load. Water outlines and the full
+            schedule are still available.
+          </p>
+          <p class="map-key">
+            <span class="line-key" aria-hidden="true"></span>Delayed-harvest
+            section <span class="pin-key" aria-hidden="true">2</span>November
+            stocking day <span class="cluster-key">Nearby waters</span>Count
+            circles zoom to separate pins
+          </p>
+          <section
+            id="detail"
+            class="detail"
+            aria-label="Selected water"
+            aria-live="polite"
+          >
+            <p class="eyebrow">A little closer to the water</p>
+            <h3>Choose a water to see more</h3>
+            <p>
+              Click a date pin, a river section, or a water in the schedule.
+            </p>
+          </section>
+        </section>
+      </div>
+      <aside class="field-notes" aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Before you head out</h2>
+        <div>
+          <p>
+            <strong>Planned dates, not guarantees.</strong> This is a November
+            2026 snapshot of the NC Wildlife schedule, last modified October 20
+            and retrieved October 23, 2026. Dates can change. Check the
+            <a
+              href="https://www.ncwildlife.gov/delayed-harvest-schedule"
+              target="_blank"
+              rel="noopener noreferrer"
+              >official schedule</a
+            >
+            before traveling.
+          </p>
+          <p>
+            <strong>Know the water.</strong> Pins do not identify parking,
+            public access, or exact stocking spots. Respect private property and
+            posted boundaries. Check
+            <a
+              href="https://www.ncwildlife.gov/fishing/trout-fishing-north-carolina"
+              target="_blank"
+              rel="noopener noreferrer"
+              >current trout regulations</a
+            >
+            and the
+            <a
+              href="https://www.ncpaws.org/ncwrcmaps/fishingareas"
+              target="_blank"
+              rel="noopener noreferrer"
+              >official fishing map</a
+            >.
+          </p>
+        </div>
+      </aside>
+      <p class="data-credit">
+        The source of the North Carolina Wildlife Resources Commission Public
+        Mountain Trout Waters data is North Carolina Wildlife Resources
+        Commission. Boundaries are approximate and should not be used for
+        regulatory purposes.
+      </p>
+      <p id="load-error" class="error" role="alert" hidden>
+        We couldn’t load the local map data. Please reload, or use the
+        <a href="https://www.ncwildlife.gov/delayed-harvest-schedule"
+          >official schedule</a
+        >.
+      </p>
+      <noscript
+        ><p class="error">
+          This interactive map needs JavaScript. View all waters and dates on
+          the
+          <a href="https://www.ncwildlife.gov/delayed-harvest-schedule"
+            >official NC Wildlife schedule</a
+          >.
+        </p></noscript
+      >
+    </main>
+    <footer>
+      <span>An independent guide, not an official NC Wildlife website.</span>
+      <nav aria-label="Sources and code">
+        <a href="./data/waters.json">Download data</a
+        ><a
+          href="https://github.com/j8d/nc-trout-stocking#data-and-location-method"
+          >Sources & method</a
+        ><a href="https://github.com/j8d/nc-trout-stocking">GitHub ↗</a>
+      </nav>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
