@@ -1,5 +1,14 @@
 # Design: a practical mountain-water field guide
 
+## Angler-guide extension (J8D-35)
+
+Audience/task: compare the November 2026 schedule, then read a water's setting, access cautions and trip-planning advice before choosing it. Success: all 33 county/water entries have their own discoverable guide; selecting a map pin exposes the same copy without losing schedule scanning or map controls.
+
+This small extension reuses established list/detail patterns and tokens, so a separate prototype/design phase is waived. Keep each existing date/name/map button; add a sibling native `details` disclosure labeled “Angler guide”, with a water/county-specific accessible name. The expanded body shows the official designation/section, date, approved summary and public “Trip-planning note”, research date and per-water source links. Do not nest interactive controls in the map button or disclosure summary. Selected-water detail repeats the guide openly. Keep private editorial material out of the source/public data, not merely hidden.
+
+Use existing pine links, paper surfaces, muted metadata and spacing; add no new visual vocabulary. Native disclosure targets are at least 44px high; numbered citations have accessible source names and inline hit areas, with a readable source list for touch users. Long titles/URLs wrap inside the sidebar. Keep the compact sidebar's scroll container when guides open or close so a lower-row trigger stays in place; the full guide and its last source remain reachable by scrolling. Mobile retains document scrolling. Shared trip context belongs in the existing “Before you head out” notes with a nearby guide reminder. Verify expanded content at 320/768/1024/1440px, keyboard disclosure/source/selection journeys (including delayed map cleanup), and axe on expanded content.
+
+
 Primary task: find a water near a chosen county or on a stocking date; inspect its designated section without mistaking the marker for an access or release point.
 
 Map-first on desktop (date-sorted 360px sidebar + large map); map and list stacked on mobile. Filters are native, visibly labeled controls. Full list is the accessible alternative to map geometry. Selecting a list entry opens the same map detail; no modal or navigation trap. Minimal motion, no hero banner taking the map off screen.

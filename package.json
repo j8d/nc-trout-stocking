@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --base /nc-trout-stocking/",
-    "build": "vite build --base /nc-trout-stocking/",
+    "build:guide": "node scripts/build_guide.mjs",
+    "build": "npm run build:guide && vite build --base /nc-trout-stocking/",
     "preview": "vite preview --base /nc-trout-stocking/ --port 4173",
     "test": "node --test tests/*.test.js",
     "test:e2e": "playwright test"

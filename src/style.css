@@ -291,7 +291,7 @@ h2 {
   padding: 0;
   margin: 0;
 }
-#water-list li {
+#water-list > li {
   border-top: 1px solid var(--border);
 }
 .water-button {
@@ -353,6 +353,77 @@ h2 {
 .row-arrow {
   margin-left: auto;
   color: var(--pine);
+}
+/* Keep the same scroll container when guides open so lower-row triggers stay put. */
+.guide-disclosure > summary {
+  min-height: 44px;
+  padding: 10px 16px;
+  color: var(--pine);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.guide-disclosure > summary:hover,
+.guide-disclosure[open] > summary {
+  background: var(--wash);
+}
+.guide-disclosure > summary:focus-visible {
+  outline-offset: -4px;
+}
+.guide-body {
+  padding: 12px 16px 16px;
+}
+.guide-date,
+.guide-body > .section-description {
+  font-size: 0.76rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.angler-guide {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-size: 0.83rem;
+  line-height: 1.65;
+}
+.angler-guide > p {
+  margin: 12px 0;
+}
+.angler-guide .angler-summary,
+.angler-guide .planning-note {
+  color: var(--ink);
+}
+.angler-guide sup {
+  vertical-align: baseline;
+}
+.citation {
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0 3px;
+  text-align: center;
+  font-size: 0.7rem;
+  vertical-align: super;
+  line-height: 24px;
+}
+.angler-guide .guide-researched {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.source-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+.source-list a {
+  display: block;
+  padding: 8px 0;
+  min-height: 44px;
+}
+.detail > .angler-guide {
+  border-top: 1px solid var(--border);
+  margin-top: 16px;
 }
 .map-panel {
   min-width: 0;

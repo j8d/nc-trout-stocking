@@ -14,6 +14,14 @@ This is a dated snapshot, **not the full fall schedule** and not a live stocking
 - Date pins are **representative water locations derived from official geometry**: source vertices on rivers and interior points within lake polygons, not exact stocking locations, public access, parking or navigation destinations. The schedule supplies a water and day, not release coordinates. Some waters consist of multiple designated stretches; read the section description and consult the official map and posted signs.
 - The app bundles a local snapshot and does not depend on ArcGIS at runtime. To update it, refresh/review sources, adjust mappings as necessary, run `python3 scripts/build_data.py`, and run all tests. There is deliberately no unattended scraper silently changing dates or coordinates.
 
+## Angler guides
+
+Every schedule listing has an **Angler guide** disclosure with its official section/date, setting and access summary, public **Trip-planning note**, research date and clickable sources. Map/list selections show the same guide in the selected-water detail. These are researched planning descriptions, not live opening reports, safe-wading guarantees or catch predictions; retain their access/closure/flow cautions and check current sources before a trip.
+
+The approved October 23, 2026 copy is stored independently in `sources/angler-guide.json`. It contains only water IDs, approved summary/planning text and cited-source references, plus a shared source lookup (ID/title/HTTPS URL). Private review notes and research evidence are not imported. Only sources actually cited by the public copy are retained, including Duke's current flow and upper-Nantahala bypass-release links.
+
+`npm run build:guide` validates exact membership against all 33 IDs in `public/data/waters.json`, rejects unknown fields/orphan references/unsafe links, and deterministically writes `public/data/angler-guide.json`. `npm run build` includes this step. `npm test` checks that the committed public file is current. Normal builds/tests need only this repository, not the original research workspace. This does not modify the schedule/GIS generator or its outputs; a future water-ID change requires a reviewed guide update too.
+
 ## Run locally
 
 Node.js 22.12+ and npm are required.
