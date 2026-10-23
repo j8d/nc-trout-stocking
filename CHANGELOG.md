@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- Persistent water names on the map, independent of clustered date pins, with duplicate names qualified by county. Crowded names appear as space becomes available when zooming or filtering.
+- Owner-only main merges, mandatory PR/CI rules and repository governance documentation.
+
+### Changed
+- Top-left icon/title now links home and clears filters, selection and deep links.
+- Legend uses `#` rather than a fixed example stocking day.
+
 ## 1.0.0
 
 ### Added
