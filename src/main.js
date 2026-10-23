@@ -15,7 +15,12 @@ const $ = (selector) => document.querySelector(selector);
 const base = import.meta.env.BASE_URL;
 const state = readState(location.search);
 const controls = { query: $("#query"), county: $("#county"), date: $("#date") };
-const map = L.map("map", { scrollWheelZoom: false, zoomControl: true }).setView(
+const map = L.map("map", {
+  scrollWheelZoom: false,
+  zoomControl: true,
+  // Keep cluster zoom cleanup from removing focused markers after filter changes.
+  zoomAnimation: false,
+}).setView(
   [35.8, -82.2],
   7,
 );

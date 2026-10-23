@@ -36,5 +36,7 @@ test('nearby-water clusters expand by keyboard and markers support Space', async
   await marker.focus();
   await page.keyboard.press('Space');
   await expect(page.locator('#detail h3')).toHaveText('Helton Creek');
+  // Catch delayed marker removal from an earlier cluster zoom, not only immediate focus.
+  await page.waitForTimeout(350);
   await expect(marker).toBeFocused();
 });

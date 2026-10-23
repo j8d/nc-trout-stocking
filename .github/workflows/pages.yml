@@ -12,6 +12,10 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    container:
+      # Keep the image version aligned with @playwright/test (guarded by tests).
+      image: mcr.microsoft.com/playwright:v1.58.2-noble@sha256:65cefd09a5e943921ecd3a6e5414c603db2eb161e9eb48f2e2ccc63486dc7dc0
+      options: --init --ipc=host
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
@@ -22,7 +26,6 @@ jobs:
       - run: npm audit --audit-level=moderate
       - run: npm test
       - run: npm run build
-      - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         if: github.ref == 'refs/heads/main'
