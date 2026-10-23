@@ -1,0 +1,601 @@
+[
+  {
+    "waterId": "ashe-helton-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      24
+    ],
+    "featureIds": [
+      15
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 15,
+      "source_vertex_index": 697,
+      "longest_path_length_m": 11690.081097534148
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "ashe-trout-lake",
+    "layer": "impoundments",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0",
+    "Excel_IDs": [
+      26
+    ],
+    "featureIds": [
+      13
+    ],
+    "representative": {
+      "method": "interior midpoint of widest horizontal bbox-midlatitude polygon scan segment",
+      "source_feature_id": 13,
+      "verified_inside_polygon": true
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "ashe-big-horse-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      23
+    ],
+    "featureIds": [
+      14
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 14,
+      "source_vertex_index": 41,
+      "longest_path_length_m": 4026.429161044342
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "ashe-south-fork-new-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      25
+    ],
+    "featureIds": [
+      16
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 16,
+      "source_vertex_index": 18,
+      "longest_path_length_m": 1423.809765326959
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "burke-jacob-fork",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      90
+    ],
+    "featureIds": [
+      91
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 91,
+      "source_vertex_index": 56,
+      "longest_path_length_m": 3850.953144904668
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "caldwell-wilson-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      103
+    ],
+    "featureIds": [
+      110
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 110,
+      "source_vertex_index": 253,
+      "longest_path_length_m": 6434.2273425613475
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "clay-fires-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      129
+    ],
+    "featureIds": [
+      128
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 128,
+      "source_vertex_index": 90,
+      "longest_path_length_m": 3584.2079217525434
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "graham-big-snowbird",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      137
+    ],
+    "featureIds": [
+      133
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 133,
+      "source_vertex_index": 375,
+      "longest_path_length_m": 4582.274312407341
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "haywood-west-fork-pigeon-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      159
+    ],
+    "featureIds": [
+      145
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 145,
+      "source_vertex_index": 98,
+      "longest_path_length_m": 3028.653863034607
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "henderson-north-fork-mills-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      172
+    ],
+    "featureIds": [
+      153
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 153,
+      "source_vertex_index": 109,
+      "longest_path_length_m": 4335.308807588715
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "jackson-tuckasegee-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      187
+    ],
+    "featureIds": [
+      171,
+      172,
+      173
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 172,
+      "source_vertex_index": 24,
+      "longest_path_length_m": 3270.3979322045125
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "macon-nantahala",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      215
+    ],
+    "featureIds": [
+      194
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 194,
+      "source_vertex_index": 82,
+      "longest_path_length_m": 6449.589155874556
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "madison-big-laurel-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      235
+    ],
+    "featureIds": [
+      202
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 202,
+      "source_vertex_index": 23,
+      "longest_path_length_m": 2006.1971777980477
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "madison-shelton-laurel-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      236
+    ],
+    "featureIds": [
+      203
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 203,
+      "source_vertex_index": 85,
+      "longest_path_length_m": 3922.7020235734512
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "madison-spring-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      237
+    ],
+    "featureIds": [
+      204
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 204,
+      "source_vertex_index": 74,
+      "longest_path_length_m": 2446.2356393368173
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "mcdowell-curtis-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      259
+    ],
+    "featureIds": [
+      225
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 225,
+      "source_vertex_index": 27,
+      "longest_path_length_m": 2829.0110144482614
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "mcdowell-mill-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      260
+    ],
+    "featureIds": [
+      226
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 226,
+      "source_vertex_index": 18,
+      "longest_path_length_m": 1240.5090021253982
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "mcdowell-catawba-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      258
+    ],
+    "featureIds": [
+      224
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 224,
+      "source_vertex_index": 29,
+      "longest_path_length_m": 3597.508643434166
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "mitchell-cane-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      270
+    ],
+    "featureIds": [
+      232,
+      233
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 233,
+      "source_vertex_index": 78,
+      "longest_path_length_m": 930.7683384361302
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "mitchell-north-toe-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      271
+    ],
+    "featureIds": [
+      234
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 234,
+      "source_vertex_index": 38,
+      "longest_path_length_m": 3723.9974484673967
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "polk-green-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      286
+    ],
+    "featureIds": [
+      246
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 246,
+      "source_vertex_index": 47,
+      "longest_path_length_m": 4034.7808747595386
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "surry-ararat-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      303
+    ],
+    "featureIds": [
+      254
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 254,
+      "source_vertex_index": 83,
+      "longest_path_length_m": 5082.963435532991
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "surry-mitchell-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      304
+    ],
+    "featureIds": [
+      255
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 255,
+      "source_vertex_index": 45,
+      "longest_path_length_m": 4241.598723409135
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "swain-tuckasegee-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      417
+    ],
+    "featureIds": [
+      355
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 355,
+      "source_vertex_index": 11,
+      "longest_path_length_m": 1612.4204038294056
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "transylvania-east-fork-french-broad-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      325
+    ],
+    "featureIds": [
+      282
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 282,
+      "source_vertex_index": 90,
+      "longest_path_length_m": 3271.2814425189704
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "transylvania-little-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      326
+    ],
+    "featureIds": [
+      283
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 283,
+      "source_vertex_index": 47,
+      "longest_path_length_m": 2930.909196609667
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "watauga-watauga-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      345,
+      518
+    ],
+    "featureIds": [
+      291,
+      1809
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 1809,
+      "source_vertex_index": 11,
+      "longest_path_length_m": 1503.5489891422474
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "watauga-lake-coffey",
+    "layer": "impoundments",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0",
+    "Excel_IDs": [
+      346
+    ],
+    "featureIds": [
+      12
+    ],
+    "representative": {
+      "method": "interior midpoint of widest horizontal bbox-midlatitude polygon scan segment",
+      "source_feature_id": 12,
+      "verified_inside_polygon": true
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "wilkes-east-prong-roaring-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      374
+    ],
+    "featureIds": [
+      313
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 313,
+      "source_vertex_index": 65,
+      "longest_path_length_m": 3932.2305907019595
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "wilkes-stone-mountain-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      377
+    ],
+    "featureIds": [
+      316
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 316,
+      "source_vertex_index": 35,
+      "longest_path_length_m": 1850.7504036420657
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "wilkes-reddies-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      411
+    ],
+    "featureIds": [
+      349
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 349,
+      "source_vertex_index": 13,
+      "longest_path_length_m": 1430.3933085341778
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "wilkes-elk-creek",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      375,
+      376
+    ],
+    "featureIds": [
+      314,
+      315
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 314,
+      "source_vertex_index": 64,
+      "longest_path_length_m": 2665.642463456404
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  },
+  {
+    "waterId": "yancey-cane-river",
+    "layer": "streams",
+    "source": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0",
+    "Excel_IDs": [
+      419
+    ],
+    "featureIds": [
+      363
+    ],
+    "representative": {
+      "method": "source vertex nearest half geodesic length of longest source path",
+      "source_feature_id": 363,
+      "source_vertex_index": 5,
+      "longest_path_length_m": 905.3552261257312
+    },
+    "caveat": "Approximate representative location derived from designated-water geometry; not a stocking release location or verified public access point."
+  }
+]

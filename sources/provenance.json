@@ -1,0 +1,23 @@
+{
+  "scheduleUrl": "https://www.ncwildlife.gov/delayed-harvest-schedule",
+  "scheduleCsvUrl": "https://files.nc.gov/nc-wildlife/2026-10/2026%20Delayed%20Harvest-November_0.csv?VersionId=vGgcW6p3NgjMKbW1yKIzWDOfSz4OzgzG",
+  "scheduleLastModified": "2026-10-20",
+  "retrieved": "2026-10-23",
+  "gisUrl": "https://www.ncpaws.org/ncwrcmaps/fishingareas",
+  "countyCrosswalkUrl": "https://www.ncpaws.org/PMTWS/TroutSearch.aspx",
+  "webmapItem": "3ff9a9fb82ab4d26a1fb80c8b2eb13e4",
+  "webmapTitle": "NCWRC Fishing Areas (2026 - 2027) v1",
+  "streamQuery": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Streams_2026/FeatureServer/0/query?f=geojson&where=FIRST_WRC_CLASS%20%3D%20%27Delayed%20Harvest%20Trout%20Waters%27&outFields=*&returnGeometry=true&outSR=4326",
+  "lakeQuery": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/PMTW_Impoundments_2026/FeatureServer/0/query?f=geojson&where=WRC_Class%20%3D%20%27Delayed%20Harvest%20Trout%20Waters%27&outFields=*&returnGeometry=true&outSR=4326",
+  "streamIdField": "OBJECTID_12",
+  "lakeIdField": "FID",
+  "joinField": "Excel_ID",
+  "aliases": { "Big Snowbird": "(Big) Snowbird Creek", "Nantahala": "Nantahala River" },
+  "method": "Match CSV county plus aliased water name to official county/reach search; join its Excel_ID to every matching official delayed-harvest feature. Preserve GeoJSON geometry unchanged. Stream markers use the actual vertex nearest half the geodesic length of the longest path. Lake markers are interior scanline midpoints, independently checked inside polygon. IDs are scoped to source layer.",
+  "caveats": [
+    "Representative water locations only: not exact release, parking or public access points.",
+    "Watauga River and Elk Creek each have two designated reaches; the water-level schedule does not specify which sub-reaches receive fish on the listed day.",
+    "The source of the North Carolina Wildlife Resources Commission Public Mountain Trout Waters data is North Carolina Wildlife Resources Commission.",
+    "Boundaries are approximate and should not be used for regulatory purposes."
+  ]
+}
