@@ -4,7 +4,7 @@ import "leaflet.markercluster";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 import "./style.css";
 import { validateGuide } from "./guide-model.js";
-import { renderGuide, renderGuideDisclosure } from "./guide-view.js";
+import { renderGuide } from "./guide-view.js";
 import {
   filterWaters,
   sortWaters,
@@ -299,8 +299,12 @@ function renderList() {
       selectWater(water.id);
       if (matchMedia("(max-width: 767px)").matches)
         $("#detail").scrollIntoView({ block: "center", behavior: "instant" });
+      else if (document.activeElement === button)
+        // A taller guide expands the scrollport and can move a bottom row below
+        // the viewport. Keep the native focused control visible, not just focused.
+        button.scrollIntoView({ block: "nearest", behavior: "instant" });
     });
-    li.append(button, renderGuideDisclosure(guideEntries.get(water.id), guideSources, water, guide.researched, dateLabel(water.date)));
+    li.append(button);
     fragment.append(li);
   }
   $("#water-list").replaceChildren(fragment);
