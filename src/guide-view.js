@@ -49,17 +49,3 @@ export function renderGuide(entry, sources, water, researched) {
   guide.append(summary, planning, research, sourceList);
   return guide;
 }
-
-export function renderGuideDisclosure(entry, sources, water, researched, date) {
-  const disclosure = node('details', 'guide-disclosure');
-  const trigger = node('summary', '', 'Angler guide');
-  trigger.setAttribute('aria-label', `Angler guide — ${water.name}, ${water.county} County`);
-  const body = node('div', 'guide-body');
-  const scheduled = node('p', 'guide-date', 'Delayed harvest · Scheduled: ');
-  const time = node('time', '', date);
-  time.dateTime = water.date;
-  scheduled.append(time);
-  body.append(scheduled, node('p', 'section-description', water.section), renderGuide(entry, sources, water, researched));
-  disclosure.append(trigger, body);
-  return disclosure;
-}

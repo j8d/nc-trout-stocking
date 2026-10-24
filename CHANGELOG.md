@@ -9,6 +9,10 @@
 ### Changed
 - Top-left icon/title now links home and clears filters, selection and deep links.
 - Legend uses `#` rather than a fixed example stocking day.
+- Schedule rows now show dates and names without repeated Angler guide disclosures; select a water to read the unchanged full guide below the map.
+
+### Fixed
+- Desktop/tablet schedule scrolling now extends alongside the entire map and selected-water detail, with the final row reachable and keyboard focus kept visible as details resize.
 
 ## 1.0.0
 
