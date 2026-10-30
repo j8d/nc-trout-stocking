@@ -5,6 +5,7 @@ import "leaflet.markercluster/dist/MarkerCluster.css";
 import "./style.css";
 import { validateGuide } from "./guide-model.js";
 import { renderGuide } from "./guide-view.js";
+import { initTheme } from "./theme.js";
 import {
   filterWaters,
   sortWaters,
@@ -184,16 +185,25 @@ function markerIcon(water, active = false) {
   });
 }
 
+// Leaflet writes SVG stroke attributes, so read the current theme's tokens.
+function sectionStyle(active = false) {
+  const token = getComputedStyle(document.documentElement);
+  return {
+    color: token.getPropertyValue(active ? "--map-selected" : "--map-section").trim(),
+    weight: active ? 6 : 4,
+    opacity: active ? 1 : 0.8,
+  };
+}
+
+function styleSections() {
+  for (const [waterId, layer] of layers) layer.setStyle(sectionStyle(waterId === selected));
+}
+
 function selectWater(id, zoom = true) {
   const water = visible.find((w) => w.id === id);
   if (!water) return;
   selected = id;
-  for (const [waterId, layer] of layers)
-    layer.setStyle({
-      color: waterId === id ? "#a53d20" : "#193f38",
-      weight: waterId === id ? 6 : 4,
-      opacity: waterId === id ? 1 : 0.8,
-    });
+  styleSections();
   for (const [waterId, marker] of markers) {
     const item = waters.find((w) => w.id === waterId);
     marker.setIcon(markerIcon(item, waterId === id));
@@ -327,13 +337,14 @@ function renderMap() {
   markerGroup.clearLayers();
   layers.clear();
   markers.clear();
+  const style = sectionStyle();
   for (const water of visible) {
     const features = sections.features.filter(
       (f) => f.properties.waterId === water.id,
     );
     const layer = L.geoJSON(
       { type: "FeatureCollection", features },
-      { style: { color: "#193f38", weight: 4, opacity: 0.8 } },
+      { style },
     );
     layer.on("click", () => selectWater(water.id));
     layer.addTo(sectionGroup);
@@ -454,4 +465,5 @@ async function start() {
     console.error(error);
   }
 }
+initTheme({ form: $("#theme-form"), onChange: styleSections });
 start();

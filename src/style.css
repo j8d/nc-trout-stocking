@@ -4,7 +4,7 @@
   border-radius: 50%;
   color: var(--pine);
   text-align: center;
-  box-shadow: 0 1px 5px #0004;
+  box-shadow: 0 1px 5px var(--shadow);
   line-height: 1.1;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
 }
 .schedule {
   scrollbar-width: thin;
-  scrollbar-color: #8a9d90 var(--wash);
+  scrollbar-color: var(--scrollbar) var(--wash);
 }
 :root {
   --paper: #f6f4ee;
@@ -43,6 +43,20 @@
   --rust: #a53d20;
   --border: #d6dcd4;
   --wash: #eaf0e9;
+  --field-border: #aab7ae;
+  --on-pine: #fff;
+  --on-rust: #fff;
+  --scrollbar: #8a9d90;
+  --shadow: #0004;
+  --shadow-soft: #0002;
+  --map-bg: #e0e7de;
+  --map-section: #193f38;
+  --map-selected: #a53d20;
+  --warning-bg: #fff0d9;
+  --warning-ink: #633d00;
+  --error-bg: #ffebe5;
+  --error-ink: #73250e;
+  color-scheme: light;
   font-family:
     Inter,
     ui-sans-serif,
@@ -57,6 +71,31 @@
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   line-height: 1.5;
+}
+/* Low-light field use: same pine-and-paper roles, lifted for dark surfaces. */
+:root[data-theme="dark"] {
+  --paper: #121c1a;
+  --surface: #182523;
+  --pine: #8fd0bc;
+  --ink: #e4ebe5;
+  --muted: #a6b6af;
+  --rust: #f29170;
+  --border: #2f433e;
+  --wash: #213430;
+  --field-border: #6b8178;
+  --on-pine: #0e1c19;
+  --on-rust: #0e1c19;
+  --scrollbar: #5f756c;
+  --shadow: #000a;
+  --shadow-soft: #0007;
+  --map-bg: #1b2725;
+  --map-section: #86dcc3;
+  --map-selected: #ff9e78;
+  --warning-bg: #3b2d12;
+  --warning-ink: #f6d59b;
+  --error-bg: #3a1b13;
+  --error-ink: #ffc7b5;
+  color-scheme: dark;
 }
 * {
   box-sizing: border-box;
@@ -138,6 +177,7 @@ button:disabled {
   gap: 16px;
 }
 .brand {
+  margin-right: auto;
   color: inherit;
   text-decoration: none;
   border-radius: 6px;
@@ -181,6 +221,61 @@ h1 {
 .edition span {
   font-size: 0.8rem;
   color: var(--muted);
+}
+.theme-switch fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.theme-switch legend {
+  float: left;
+  padding: 0;
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 50px;
+}
+.theme-options {
+  position: relative;
+  display: flex;
+  padding: 2px;
+  border: 1px solid var(--field-border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.theme-options input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  min-height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+.theme-options label {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin: 0;
+  padding: 0 12px;
+  border-radius: 6px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.theme-options label:hover {
+  background: var(--wash);
+  color: var(--ink);
+}
+.theme-options input:checked + label {
+  background: var(--pine);
+  color: var(--on-pine);
+}
+.theme-options input:focus-visible + label {
+  outline: 3px solid var(--rust);
+  outline-offset: 2px;
 }
 main {
   padding: 0 32px;
@@ -229,7 +324,7 @@ label {
 input,
 select {
   width: 100%;
-  border: 1px solid #aab7ae;
+  border: 1px solid var(--field-border);
   border-radius: 6px;
   background: var(--surface);
   padding: 10px 12px;
@@ -239,7 +334,7 @@ input::placeholder {
 }
 .secondary {
   padding: 10px 16px;
-  border: 1px solid #aab7ae;
+  border: 1px solid var(--field-border);
   border-radius: 6px;
   background: var(--surface);
   font-weight: 600;
@@ -329,7 +424,7 @@ h2 {
 .date-stamp small {
   display: block;
   background: var(--pine);
-  color: white;
+  color: var(--on-pine);
   font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -420,7 +515,7 @@ h2 {
 }
 #map {
   height: 470px;
-  background: #e0e7de;
+  background: var(--map-bg);
   isolation: isolate;
 }
 .leaflet-container {
@@ -431,7 +526,36 @@ h2 {
   font-size: 10px !important;
 }
 .leaflet-control-attribution a {
-  color: #193f38 !important;
+  color: var(--pine) !important;
+}
+/* Same OSM tiles, inverted for night use; sections, pins and names stay untouched. */
+[data-theme="dark"] .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+}
+[data-theme="dark"] .leaflet-bar {
+  border-color: var(--border);
+}
+[data-theme="dark"] .leaflet-bar a,
+[data-theme="dark"] .leaflet-bar a:hover,
+[data-theme="dark"] .leaflet-bar a.leaflet-disabled {
+  background-color: var(--surface);
+  color: var(--ink);
+  border-bottom-color: var(--border);
+}
+[data-theme="dark"] .leaflet-bar a:hover {
+  background-color: var(--wash);
+}
+[data-theme="dark"] .leaflet-bar a.leaflet-disabled {
+  color: var(--muted);
+}
+[data-theme="dark"] .leaflet-control-attribution {
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  color: var(--ink);
+}
+[data-theme="dark"] .leaflet-popup-content-wrapper,
+[data-theme="dark"] .leaflet-popup-tip {
+  background: var(--surface);
+  color: var(--ink);
 }
 .map-water-names {
   position: absolute;
@@ -443,7 +567,7 @@ h2 {
   position: absolute;
   max-width: 180px;
   padding: 2px 5px;
-  border: 1px solid #aab7ae;
+  border: 1px solid var(--field-border);
   border-radius: 4px;
   background: var(--surface);
   color: var(--pine);
@@ -451,7 +575,7 @@ h2 {
   font-weight: 600;
   line-height: 1.25;
   overflow-wrap: anywhere;
-  box-shadow: 0 1px 3px #0002;
+  box-shadow: 0 1px 3px var(--shadow-soft);
 }
 .map-label-county {
   display: block;
@@ -489,10 +613,10 @@ h2 {
 }
 .date-marker {
   background: var(--pine);
-  color: #fff;
+  color: var(--on-pine);
   border: 2px solid var(--surface);
   border-radius: 6px;
-  box-shadow: 0 1px 5px #0004;
+  box-shadow: 0 1px 5px var(--shadow);
   text-align: center;
   font-size: 12px;
   font-weight: 700;
@@ -501,6 +625,7 @@ h2 {
 }
 .date-marker.selected {
   background: var(--rust);
+  color: var(--on-rust);
   z-index: 1000 !important;
 }
 .leaflet-marker-icon:focus-visible {
@@ -527,7 +652,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background: var(--pine);
-  color: #fff;
+  color: var(--on-pine);
   width: 20px;
   height: 20px;
   border-radius: 4px;
@@ -571,8 +696,8 @@ h2 {
 }
 .map-warning {
   padding: 10px 20px;
-  background: #fff0d9;
-  color: #633d00;
+  background: var(--warning-bg);
+  color: var(--warning-ink);
   font-size: 0.8rem;
 }
 #empty {
@@ -618,9 +743,9 @@ footer nav {
 }
 .error {
   padding: 20px;
-  background: #ffebe5;
-  color: #73250e;
-  border: 1px solid #a53d20;
+  background: var(--error-bg);
+  color: var(--error-ink);
+  border: 1px solid var(--rust);
   margin: 20px 0;
 }
 [hidden] {
@@ -672,8 +797,17 @@ footer nav {
 @media (max-width: 767px) {
   .masthead {
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 20px 16px;
     gap: 8px;
+  }
+  .brand {
+    flex: 1;
+    margin-right: 0;
+  }
+  .theme-switch {
+    flex-basis: 100%;
+    margin-top: 4px;
   }
   .brand {
     gap: 10px;

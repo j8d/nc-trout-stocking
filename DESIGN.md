@@ -1,5 +1,15 @@
 # Design: a practical mountain-water field guide
 
+## Dark mode (J8D-41)
+
+Audience/task: anglers checking dates and waters in a bright shop or a dark truck cab before dawn. Success: a discoverable theme choice that keeps the map readable and the search/select/share journey unchanged on mobile and desktop.
+
+Control: a visible “Theme” radio group (System/Light/Dark) at the top right of the masthead; below 768px it takes its own full-width row under the title. Native radios keep arrow-key selection and one tab stop; segments are 44px tall and the checked one is filled, not only recolored. System is the default and follows `prefers-color-scheme`, including live OS changes. Light or Dark is saved as `nc-trout-theme` in `localStorage`; choosing System removes it. If storage is blocked the page follows the system and the choice lasts for the visit. A tiny inline head script applies the theme before first paint (no light flash); `src/theme.js` owns the same rules and tests check they agree.
+
+Tokens: dark mode reassigns the existing pine-and-paper roles on `:root[data-theme="dark"]` rather than adding a second palette system. Paper/surface become deep green-black, ink pale, pine a light mint used for headings/links/fills, rust a lighter coral for selection and focus. Fills that carried white text use `--on-pine`/`--on-rust`. All text pairs meet 4.5:1 and field borders 3:1. Light values are unchanged.
+
+Map: same OpenStreetMap tile URLs and attribution; in dark mode only the tile pane is inverted/hue-rotated so roads and water stay legible without glare. Sections, pins, clusters, name labels and leaders are drawn from tokens (section lines read `--map-section`/`--map-selected` because Leaflet writes SVG attributes) and restyle on theme change. Zoom/attribution controls take the dark surface. Tile failure and data errors keep their explicit messages with dark-safe warning/error tokens.
+
 ## Compact schedule and selected-water guide (J8D-36)
 
 Audience/task: scan the November 2026 dates and names, then select a water to read its setting, access cautions and trip-planning advice. Success: all 33 waters remain single-button rows; list and map selection reveal the same full approved guide in the selected-water detail, without repeated disclosures in the list.
