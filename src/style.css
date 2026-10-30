@@ -222,13 +222,15 @@ h1 {
   font-size: 0.8rem;
   color: var(--muted);
 }
-.theme-switch fieldset {
+.theme-switch fieldset,
+.basemap-switch fieldset {
   border: 0;
   margin: 0;
   padding: 0;
   min-width: 0;
 }
-.theme-switch legend {
+.theme-switch legend,
+.basemap-switch legend {
   float: left;
   padding: 0;
   margin-right: 8px;
@@ -236,7 +238,7 @@ h1 {
   font-size: 0.78rem;
   line-height: 50px;
 }
-.theme-options {
+.segmented {
   position: relative;
   display: flex;
   padding: 2px;
@@ -244,7 +246,7 @@ h1 {
   border-radius: 8px;
   background: var(--surface);
 }
-.theme-options input {
+.segmented input {
   position: absolute;
   opacity: 0;
   width: 1px;
@@ -253,7 +255,7 @@ h1 {
   margin: 0;
   pointer-events: none;
 }
-.theme-options label {
+.segmented label {
   display: flex;
   flex: 1;
   align-items: center;
@@ -265,15 +267,15 @@ h1 {
   color: var(--muted);
   cursor: pointer;
 }
-.theme-options label:hover {
+.segmented label:hover {
   background: var(--wash);
   color: var(--ink);
 }
-.theme-options input:checked + label {
+.segmented input:checked + label {
   background: var(--pine);
   color: var(--on-pine);
 }
-.theme-options input:focus-visible + label {
+.segmented input:focus-visible + label {
   outline: 3px solid var(--rust);
   outline-offset: 2px;
 }
@@ -528,8 +530,9 @@ h2 {
 .leaflet-control-attribution a {
   color: var(--pine) !important;
 }
-/* Same OSM tiles, inverted for night use; sections, pins and names stay untouched. */
-[data-theme="dark"] .leaflet-tile-pane {
+/* Same OSM tiles, inverted for night use; sections, pins and names stay untouched.
+   Satellite imagery is never inverted: the base map and theme are independent. */
+[data-theme="dark"] .map-panel:not([data-basemap="satellite"]) .leaflet-tile-pane {
   filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
 }
 [data-theme="dark"] .leaflet-bar {
@@ -556,6 +559,40 @@ h2 {
 [data-theme="dark"] .leaflet-popup-tip {
   background: var(--surface);
   color: var(--ink);
+}
+/* Imagery is mostly dark forest with bright fields and roads: light section
+   strokes with a dark casing stay visible on both, in either theme. */
+.map-panel[data-basemap="satellite"] {
+  --map-section: #9cf2d8;
+  --map-selected: #ffb08f;
+}
+.map-panel[data-basemap="satellite"] .leaflet-overlay-pane svg {
+  filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 2px #000c);
+}
+.map-panel[data-basemap="satellite"] .line-key {
+  box-shadow: 0 0 0 1px #000;
+}
+.map-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.basemap-status:empty {
+  display: none;
+}
+.basemap-status,
+.basemap-note {
+  padding: 8px 20px 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.map-warning {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .map-water-names {
   position: absolute;
@@ -644,7 +681,7 @@ h2 {
 .line-key {
   height: 3px;
   width: 20px;
-  background: var(--pine);
+  background: var(--map-section);
   border-radius: 4px;
 }
 .pin-key {
@@ -878,6 +915,18 @@ footer nav {
   .map-heading .secondary {
     padding: 8px;
     font-size: 0.7rem;
+  }
+  .map-heading {
+    flex-wrap: wrap;
+  }
+  .map-actions {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+  .basemap-status,
+  .basemap-note {
+    padding: 8px 12px 0;
+    font-size: 0.68rem;
   }
   #map {
     height: 340px;
