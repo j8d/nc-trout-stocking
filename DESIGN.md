@@ -1,5 +1,17 @@
 # Design: a practical mountain-water field guide
 
+## Map / Satellite base map (J8D-43)
+
+Audience/task: anglers find or select a water, switch to aerial imagery to read the surrounding terrain, then switch back without losing their place. Success: imagery gives orientation without hiding stocking information or interrupting the select/filter/share journey. This bounded control addition reuses established patterns, so a separate prototype phase was waived.
+
+Control: a visible "Base map" radio group (Map/Satellite) in the map heading, beside Fit results. It uses the same `.segmented` native-radio component as Theme: one tab stop, arrow keys switch, 44px segments, a filled checked state and a rust focus ring. Below 768px the actions take a full row under the map heading. Map is the default. The choice lasts only for the visit and is not added to share URLs, so a shared link always opens on the familiar road map.
+
+Behaviour: switching swaps only Leaflet's base tile layer. Sections, date pins, clusters, names, selection, filters, URL, center and zoom stay untouched, and Leaflet swaps the attribution. Both layers keep the same zoom range so the view never jumps. Imagery past level 16 is enlarged rather than re-requested, and a note under the map says so. Imagery is never requested before Satellite is chosen.
+
+Legibility: theme and base map are independent. Dark mode still inverts only the road map; satellite imagery is never inverted. On imagery, the map panel overrides `--map-section`/`--map-selected` with light mint/coral and casts a thin dark casing on the section SVG. Lines then stay visible on both dark forest and bright fields in either theme, and the legend line follows the same token. Labels and pins keep their surface backgrounds and borders.
+
+Feedback: a status line says "Loading satellite imagery…" until tiles arrive. While Satellite is shown, a caveat says the imagery is not live and does not establish public access or current conditions. If imagery fails, the existing warning names the satellite failure and offers **Switch back to Map**, which returns focus to the Map radio. Road-map failure keeps its original message without that button.
+
 ## Dark mode (J8D-41)
 
 Audience/task: anglers checking dates and waters in a bright shop or a dark truck cab before dawn. Success: a discoverable theme choice that keeps the map readable and the search/select/share journey unchanged on mobile and desktop.
@@ -27,7 +39,7 @@ Map-first on desktop (date-sorted 340px sidebar + large map); map and list stack
 
 Visual vocabulary: warm paper (#f6f4ee), deep pine (#193f38), dark ink (#1c302c), rust accent (#a53d20), subdued borders (#d6dcd4). System sans body, Georgia display title. Small uppercase labels; bold tabular stocking-date stamps. Dates printed on markers so meaning never relies on color. Border radii 6–10px, 4px spacing scale, controls at least 44px high. Focus outline is high-contrast rust, not a subtle color change.
 
-Map semantics: solid pine strokes for official delayed-harvest sections, rust for selection; representative date markers along those sections. Explain them directly above the map. Never label a marker as an exact stocking point. Always retain attribution. Basemap failure leaves local section outlines and complete list available.
+Map semantics: solid pine strokes for official delayed-harvest sections, rust for selection; representative date markers along those sections. Explain them directly above the map. Never label a marker as an exact stocking point. Always retain attribution for the active base map. Basemap failure leaves local section outlines and complete list available.
 
 Water names: a default-on, noninteractive label pane sits above sections and below date pins/clusters. Names use DOM text, remain independent of clustering, and have short haloed leaders to their representative water locations. Duplicate Tuckasegee names include a separate county line. Screen-space placement avoids other labels, pins, clusters, controls and map edges; selection gets first placement. At dense overview scales not every name can fit: omit colliding names rather than overlap, show an honest visible-name count, and invite zoom/filter for more. All schedule names remain available in the accessible list. Keep existing map dimensions; never enlarge the map just to force all 33 labels in. Labels are hidden during pan/zoom and laid out again afterward, including resize/filter/reset.
 

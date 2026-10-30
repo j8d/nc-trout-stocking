@@ -43,7 +43,7 @@
       <form id="theme-form" class="theme-switch">
         <fieldset>
           <legend>Theme</legend>
-          <div class="theme-options">
+          <div class="theme-options segmented">
             <input type="radio" name="theme" id="theme-system" value="system" checked /><label for="theme-system">System</label>
             <input type="radio" name="theme" id="theme-light" value="light" /><label for="theme-light">Light</label>
             <input type="radio" name="theme" id="theme-dark" value="dark" /><label for="theme-dark">Dark</label>
@@ -131,9 +131,20 @@
                 locations, not release or access points.
               </p>
             </div>
-            <button type="button" class="secondary" id="fit">
-              Fit results
-            </button>
+            <div class="map-actions">
+              <form id="basemap-form" class="basemap-switch">
+                <fieldset>
+                  <legend>Base map</legend>
+                  <div class="segmented">
+                    <input type="radio" name="basemap" id="basemap-map" value="map" checked /><label for="basemap-map">Map</label>
+                    <input type="radio" name="basemap" id="basemap-satellite" value="satellite" /><label for="basemap-satellite">Satellite</label>
+                  </div>
+                </fieldset>
+              </form>
+              <button type="button" class="secondary" id="fit">
+                Fit results
+              </button>
+            </div>
           </div>
           <div
             id="map"
@@ -141,10 +152,17 @@
             aria-label="Interactive map of North Carolina delayed-harvest trout waters"
             tabindex="0"
           ></div>
-          <p id="tile-warning" class="map-warning" role="status" hidden>
-            Some basemap tiles could not load. Water outlines and the full
-            schedule are still available.
-          </p>
+          <p id="basemap-status" class="basemap-status" role="status"></p>
+          <div id="tile-warning" class="map-warning" role="status" hidden>
+            <p id="tile-warning-text">
+              Some basemap tiles could not load. Water outlines and the full
+              schedule are still available.
+            </p>
+            <button type="button" class="secondary" id="road-map" hidden>
+              Switch back to Map
+            </button>
+          </div>
+          <p id="basemap-note" class="basemap-note" hidden></p>
           <p class="map-key">
             <span class="line-key" aria-hidden="true"></span>Delayed-harvest
             section <span class="pin-key" aria-hidden="true">#</span>November

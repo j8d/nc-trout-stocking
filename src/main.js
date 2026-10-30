@@ -6,6 +6,7 @@ import "./style.css";
 import { validateGuide } from "./guide-model.js";
 import { renderGuide } from "./guide-view.js";
 import { initTheme } from "./theme.js";
+import { BASEMAPS, basemapNote, isBasemap, tileWarning } from "./basemap.js";
 import {
   filterWaters,
   sortWaters,
@@ -27,14 +28,53 @@ const map = L.map("map", {
   [35.8, -82.2],
   7,
 );
-const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map);
-tiles.on("tileerror", () => {
+// Base layers swap underneath the overlays, so sections, pins, names,
+// selection, filters, URL, center and zoom are untouched by a switch.
+const basemaps = new Map();
+let basemap = "map";
+for (const [choice, { url, options }] of Object.entries(BASEMAPS)) {
+  const layer = L.tileLayer(url, options);
+  layer.on("tileerror", () => {
+    if (choice === basemap) showTileWarning();
+  });
+  layer.on("loading", () => {
+    if (choice === basemap && choice !== "map")
+      $("#basemap-status").textContent = `Loading ${BASEMAPS[choice].label.toLowerCase()} imagery…`;
+  });
+  layer.on("load", () => {
+    if (choice === basemap) $("#basemap-status").textContent = "";
+  });
+  basemaps.set(choice, layer);
+}
+basemaps.get(basemap).addTo(map);
+
+function showTileWarning() {
+  $("#tile-warning-text").textContent = tileWarning(basemap);
+  $("#road-map").hidden = basemap === "map";
   $("#tile-warning").hidden = false;
-});
+}
+
+function updateBasemapNote() {
+  const note = basemapNote(basemap, map.getZoom());
+  $("#basemap-note").textContent = note;
+  $("#basemap-note").hidden = !note;
+}
+
+function setBasemap(choice) {
+  if (!isBasemap(choice) || choice === basemap) return;
+  map.removeLayer(basemaps.get(basemap));
+  basemap = choice;
+  $("#tile-warning").hidden = true;
+  $("#basemap-status").textContent = "";
+  $(".map-panel").dataset.basemap = choice;
+  basemaps.get(choice).addTo(map);
+  $(`#basemap-${choice}`).checked = true;
+  updateBasemapNote();
+  styleSections();
+  scheduleNames(); // Attribution width changes the space labels can use.
+}
+$(".map-panel").dataset.basemap = basemap;
+map.on("zoomend", updateBasemapNote);
 const sectionGroup = L.featureGroup().addTo(map);
 const markerGroup = L.markerClusterGroup({
   maxClusterRadius: 50,
@@ -185,9 +225,10 @@ function markerIcon(water, active = false) {
   });
 }
 
-// Leaflet writes SVG stroke attributes, so read the current theme's tokens.
+// Leaflet writes SVG stroke attributes, so read the current theme's tokens
+// (satellite imagery overrides them on the map panel).
 function sectionStyle(active = false) {
-  const token = getComputedStyle(document.documentElement);
+  const token = getComputedStyle(map.getContainer());
   return {
     color: token.getPropertyValue(active ? "--map-selected" : "--map-section").trim(),
     weight: active ? 6 : 4,
@@ -466,4 +507,10 @@ async function start() {
   }
 }
 initTheme({ form: $("#theme-form"), onChange: styleSections });
+$("#basemap-form").addEventListener("change", (event) => setBasemap(event.target.value));
+$("#basemap-form").addEventListener("submit", (event) => event.preventDefault());
+$("#road-map").addEventListener("click", () => {
+  setBasemap("map");
+  $("#basemap-map").focus();
+});
 start();
