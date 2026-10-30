@@ -3,6 +3,7 @@
 ## Unreleased
 
 ### Added
+- Dark mode with an accessible System/Light/Dark control. It follows the device setting until you choose, remembers an explicit choice on this device when storage is available, and themes the schedule, filters, guide, map controls, labels, legend and error states. The same OpenStreetMap tiles are dimmed for night viewing.
 - Persistent water names on the map, independent of clustered date pins, with duplicate names qualified by county. Crowded names appear as space becomes available when zooming or filtering.
 - Owner-only main merges, mandatory PR/CI rules and repository governance documentation.
 

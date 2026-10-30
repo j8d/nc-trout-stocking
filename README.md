@@ -2,7 +2,7 @@
 
 **Public map: https://j8d.github.io/nc-trout-stocking/**
 
-An independent, mobile-friendly map of all **33 county/water entries in NC Wildlife's November 2026 delayed-harvest stocking schedule**. Search by water or county, combine county/date filters, click date pins or mapped sections, and share the resulting URL.
+An independent, mobile-friendly map of all **33 county/water entries in NC Wildlife's November 2026 delayed-harvest stocking schedule**. Search by water or county, combine county/date filters, click date pins or mapped sections, and share the resulting URL. A System/Light/Dark theme control follows the device setting until you choose otherwise.
 
 This is a dated snapshot, **not the full fall schedule** and not a live stocking confirmation feed. Check the [official schedule](https://www.ncwildlife.gov/delayed-harvest-schedule) before traveling. Scheduled dates may change.
 
@@ -48,9 +48,11 @@ npm run test:e2e
 npm audit --audit-level=moderate
 ```
 
+On hosts Playwright cannot install browsers for (for example newer Ubuntu releases), run the same gates in CI's pinned image: `docker run --rm --init --ipc=host -u "$(id -u):$(id -g)" -e HOME=/tmp -e CI=1 -v "$PWD":/work -w /work mcr.microsoft.com/playwright:v1.58.2-noble sh -c 'npm ci && npm test && npm run build && npm run test:e2e'`.
+
 If Chromium is already installed, `CHROMIUM_PATH=/path/to/chrome npm run test:e2e` uses it. Test the public deployment with `LIVE_URL=https://j8d.github.io/nc-trout-stocking/ npm run test:e2e`.
 
-Tests cover every schedule row/date, location provenance and geometry, filters, sorting, URL state, selection, keyboard journeys, 320/768/1024/1440px layouts, automated WCAG checks, tile failures and data-error fallback. Automated accessibility checks are not a substitute for a full assistive-technology audit.
+Tests cover every schedule row/date, location provenance and geometry, filters, sorting, URL state, selection, keyboard journeys, theme preference precedence/persistence/storage fallback and dark-mode map/mobile/error states, 320/768/1024/1440px layouts, automated WCAG checks, tile failures and data-error fallback. Automated accessibility checks are not a substitute for a full assistive-technology audit.
 
 ## Publishing
 
@@ -68,7 +70,7 @@ References: [Playwright CI containers](https://playwright.dev/docs/ci#via-contai
 
 ## Architecture and privacy
 
-Vanilla ES modules + Leaflet, built by Vite. No backend, logins, analytics, tracking scripts or API keys. Dependencies are bundled rather than loaded from a third-party script CDN. The basemap uses [OpenStreetMap standard tiles](https://operations.osmfoundation.org/policies/tiles/); tile requests expose the browser's IP and normal HTTP metadata to the tile provider. GitHub Pages serves the site and may retain its normal hosting logs. Do not prefetch or bulk-download tiles. Failed tiles leave the local water outlines, pins and complete list available.
+Vanilla ES modules + Leaflet, built by Vite. No backend, logins, analytics, tracking scripts or API keys. Dependencies are bundled rather than loaded from a third-party script CDN. The basemap uses [OpenStreetMap standard tiles](https://operations.osmfoundation.org/policies/tiles/); tile requests expose the browser's IP and normal HTTP metadata to the tile provider. GitHub Pages serves the site and may retain its normal hosting logs. Do not prefetch or bulk-download tiles. The only browser storage is an optional `nc-trout-theme` light/dark choice in `localStorage`; it never leaves the device. Failed tiles leave the local water outlines, pins and complete list available.
 
 The source-code license does not relicense official GIS/schedule content or OpenStreetMap data. OpenStreetMap attribution is shown on the map; official source attribution and limitations are displayed alongside the schedule. This project is not affiliated with or endorsed by the North Carolina Wildlife Resources Commission.
 

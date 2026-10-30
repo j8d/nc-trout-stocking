@@ -10,6 +10,20 @@
     <meta name="theme-color" content="#193f38" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>NC Trout Stocking Map · November 2026</title>
+    <script>
+      // Apply the saved or system theme before first paint (see src/theme.js).
+      (function () {
+        var choice;
+        try {
+          choice = localStorage.getItem("nc-trout-theme");
+        } catch (error) {}
+        var dark =
+          choice === "dark" ||
+          (choice !== "light" &&
+            matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#waters">Skip to stocking schedule</a>
@@ -26,6 +40,16 @@
       <div class="edition">
         <strong>November 2026</strong><span>33 waters · 19 counties</span>
       </div>
+      <form id="theme-form" class="theme-switch">
+        <fieldset>
+          <legend>Theme</legend>
+          <div class="theme-options">
+            <input type="radio" name="theme" id="theme-system" value="system" checked /><label for="theme-system">System</label>
+            <input type="radio" name="theme" id="theme-light" value="light" /><label for="theme-light">Light</label>
+            <input type="radio" name="theme" id="theme-dark" value="dark" /><label for="theme-dark">Dark</label>
+          </div>
+        </fieldset>
+      </form>
     </header>
     <main>
       <section class="intro" aria-label="About this map">
