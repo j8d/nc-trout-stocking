@@ -3,6 +3,7 @@
 ## Unreleased
 
 ### Added
+- Footer credit: "Website by Ryan Stutzman · © 2026 Ryan Stutzman", scoped to the site code (MIT, linked) while map data, imagery and NC Wildlife content stay with their credited sources.
 - Map / Satellite base-map switch above the map. Satellite shows public-domain USGS/USDA aerial imagery without changing selection, filters, share links, map position or the water outlines, pins and names. Map stays the default. Imagery is labelled as not live, enlargement past its full detail is disclosed, and a failed imagery load offers a one-step return to Map.
 - Dark mode with an accessible System/Light/Dark control. It follows the device setting until you choose, remembers an explicit choice on this device when storage is available, and themes the schedule, filters, guide, map controls, labels, legend and error states. The same OpenStreetMap tiles are dimmed for night viewing.
 - Persistent water names on the map, independent of clustered date pins, with duplicate names qualified by county. Crowded names appear as space becomes available when zooming or filtering.

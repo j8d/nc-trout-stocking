@@ -1,5 +1,9 @@
 # Design: a practical mountain-water field guide
 
+## Site credit (J8D-45)
+
+The global footer keeps the muted, small footer style. Left: the unofficial-site disclaimer, then "Website by Ryan Stutzman · © 2026 Ryan Stutzman" with a linked MIT notice and a reminder that map data, imagery and NC Wildlife content belong to their credited sources. Right: the existing source/code links. The owner notice covers only the original website work; never add "all rights reserved" or move provider credits off the map. Below 768px it stacks and wraps at 320px without overflow.
+
 ## Map / Satellite base map (J8D-43)
 
 Audience/task: anglers find or select a water, switch to aerial imagery to read the surrounding terrain, then switch back without losing their place. Success: imagery gives orientation without hiding stocking information or interrupting the select/filter/share journey. This bounded control addition reuses established patterns, so a separate prototype phase was waived.
