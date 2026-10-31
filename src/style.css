@@ -778,6 +778,15 @@ footer nav {
   gap: 16px;
   flex-wrap: wrap;
 }
+.footer-notes {
+  max-width: 84ch;
+}
+.footer-notes p {
+  margin: 0;
+}
+.footer-notes p + p {
+  margin-top: 4px;
+}
 .error {
   padding: 20px;
   background: var(--error-bg);
